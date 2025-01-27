@@ -1,0 +1,113 @@
+{
+    "TopArtists": {
+        "1": {
+            "name": "Karan Aulja",
+            "profession": "Artist",
+            "img": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84117e365f4b9f06d6a25f5955",
+            "src": "/song/?songname="
+
+        },
+        "2": {
+            "name": "Arijit Singh",
+            "profession": "Artist",
+            "img": "https://media.insider.in/image/upload/c_crop,g_custom/v1728462701/yiwwlrbe78ahhohjjmum.jpg",
+            "src": "/song/?songname="
+        },
+        "4": {
+            "name": "Shreya Ghoshal",
+            "profession": "Artist",
+            "img": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84f2836295d5df39844017c8a3",
+            "src": "/song/?songname="
+        }
+    },
+    "JumpBackIn": {
+        "1": {
+            "name": "Jaguar",
+            "artist": "Bohimia, Shukie",
+            "img": "https://c.saavncdn.com/196/Jaguar-Punjabi-2015-500x500.jpg",
+            "src": "/music/Jaguar.mp3"
+        },
+        "2": {
+            "name": "Wavy",
+            "artist": "Karan Aulja, Mrxci",
+            "img": "https://i.scdn.co/image/ab67616d00001e02e34f05599c4a42e1cbb1c251",
+            "src": "/music/WAVY.mp3"
+        },
+        "3": {
+            "name": "Millinore",
+            "artist": "Honey Singh",
+            "img": "https://c.saavncdn.com/173/GLORY-Hindi-2024-20240926151002-500x500.jpg",
+            "src": "/music/MILLIONAIRE.mp3"
+        },
+        "4": {
+            "name": "Dope Shope",
+            "artist": "Honey Singh, Deep Money",
+            "img": "https://c.saavncdn.com/blob/924/International-Villager-Punjabi-2011-20220722144441-500x500.jpg",
+            "src": "/music/Dope Shope.mp3"
+        },
+        "5": {
+            "name": "Into You",
+            "artist": "Tegi Pannu, Manni Sandhu",
+            "img": "https://i.scdn.co/image/ab67616d0000b27321899c20e9bedffc3ce9538a",
+            "src": "/music/INTO YOU.mp3"
+        },
+        "6": {
+            "name": "Made In India (From 'Made In India')",
+            "artist": "Guru Randhawa",
+            "img": "https://c.saavncdn.com/887/Made-In-India-Punjabi-2018-20180605-500x500.jpg",
+            "src": "/music/Made In India (From  Made In India ) - Guru Randhawa.m4a"
+        },
+        "7": {
+            "name": "Subhanallah",
+            "artist": "Pritam, Sreeram, Shilpa Rao",
+            "img": "https://i.scdn.co/image/ab67616d0000b273707ea5b8023ac77d31756ed4",
+            "src": "/music/Subhanallah - Pritam, Sreeram, Shilpa Rao.m4a"
+        },
+        "8": {
+            "name": "Heartquake",
+            "artist": "Papon",
+            "img": "https://i.scdn.co/image/ab67616d0000b273f07f0455c6cc38f14105acfb",
+            "src": "/music/Heartquake - Papon.m4a"
+        },
+        "9": {
+            "name": "Laapata",
+            "artist": "King",
+            "img": "https://i.scdn.co/image/ab67616d0000b2732fb6667fe2da23c61487b3d0",
+            "src": "/music/Laapata - King.m4a"
+        },
+        "10": {
+            "name": "Isq Risk",
+            "artist": "Rahat Fateh Ali Khan",
+            "img": "https://c.saavncdn.com/658/Mere-Brother-Ki-Dulhan-Hindi-2011-20240916164253-500x500.jpg",
+            "src": "/music/Isq Risk - Sohail Sen, Rahat Fateh Ali Khan, Irshad Kamil.m4a"
+        }
+    }
+    ,
+    "TopAlbums": {
+        "1": {
+            "name": "Chali Bhe Motor Chali",
+            "artist": "Narendra Singh Negi",
+            "img": "https://i.scdn.co/image/ab67616d00001e02c31f08ab805d84cb4fbf6968",
+            "src": "/song/?songname="
+        },
+        "2": {
+            "name": "MoonChild Era",
+            "artist": "Diljit Dosanjh",
+            "img": "https://i.scdn.co/image/ab67616d0000b273ef759d4ae310020a06939e99",
+            "src": "/song/?songname="
+        },
+        "3": {
+            "name": "Making Memories",
+            "artist": "Karan Aulja",
+            "img": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
+            "src": "/song/?songname="
+        },
+        "4": {
+            "name": "Moosetape",
+            "artist": "Sidhu Moosewala",
+            "img": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+            "src": "/song/?songname="
+        }
+        
+    }
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% const value=data %>
+
+        <title>
+            <%= value.singerName %>
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/music">
+
+        <link rel="stylesheet" href="/songs.css">
+        <link rel="stylesheet" href="/singer.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" href="picture resource/title__logo.png" type="image/x-icon" id="v">
+</head>
+
+<body>
+    <div class="music-player">
+
+        <nav id="navBar">
+            <div id="logo"><img src="picture resource/nav-bar-logo.png" class="logo"><img
+                    src="picture resource/Name-logo.png" id="lGo"></div>
+
+
+
+            <div id="logo"></div>
+        </nav>
+
+        <div id="navMiddelPart">
+            <button id="backbtn"><i class="fa-solid fa-arrow-left"></i></button>
+            <h2>Search</h2>
+            <form id="searchForm" method="get" action="/song/">
+                <div id="allinputAndBTns">
+
+                    <div class="serchb-section">
+                        <div id="serch-sign"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+
+
+                        <input placeholder="What do you want to play?" id="searchBox" name="songname"
+                            autocomplete="off">
+
+
+
+
+                        <div id="cross"><i class="fa-regular fa-circle-xmark"></i></div>
+                    </div>
+                </div>
+                <div id="results">Play What You Love</div>
+            </form>
+        </div>
+
+
+
+
+        <div id="popUp">
+            <div class="welcome-container">
+                <h1>WARNING!</h1>
+                <p>In This Music Player Limited Song <br>If your Song not found please refresh the screen or <br> press
+                    Home Button. ! </p>
+            </div>
+        </div>
+        <!-- Left side -->
+        <div class="mainSecyionMusicLibary">
+
+
+            <div class="playlist">
+
+                <div id="x">
+                    <div id="left_1">Hey ! Welcome</div>
+                    <div class="left_2">
+                        <h5>This is our Music Player</h5>
+                        <span class="btn-left">Please Choose Song To Listen</span>
+                    </div>
+
+                    <div class="left_2">
+                        <h5>This is our Music Player</h5>
+                        <span class="btn-left">Please Choose Song To Listen</span>
+                    </div>
+                    <div class="left_2 left_3">
+
+                    </div>
+                </div>
+                <div id="playlist">
+                    <!-- Playlist will be generated dynamically -->
+                    <div class="sing-song">
+
+
+                        <div class="head" src="<%= value.imgSrc %>">
+                            <div class="go-back-container">
+                                <button id="goBackButton" class="go-back-button"><i
+                                        class="fa-solid fa-arrow-right fa-rotate-180"></i></button>
+                            </div>
+
+                            <div id="info-about-song">
+                                <a class="albumName" href="/song/?songname=<%= value.singerName %>">
+                                    <%= value.singerName %>
+                                </a>
+                                <div class="singerInfo">
+
+                                    <div class="artistNAME">
+                                        <%= value.listnerNo %> monthly listner's
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Top Songs</h3>
+                        <% for(let song of value.Topsongs) {%>
+
+                            <div class="playlistInnerDivs album" src="<%= song.src %>">
+                                <img src="<%= song.imgSrc %>">
+                                <div class="music-div">
+                                    <div class="SongName">
+                                        <%= song.songName %>
+                                    </div>
+                                    <div class="artistName">
+                                        <%= song.artistName %>
+                                    </div>
+                                </div>
+                                <div class="duration_song"></div>
+                            </div>
+                            <% }%>
+
+                                <% if(value.newrealse.length> 0) {%>
+                                    <div class="section-title">Latest Release</div>
+                                    <!-- Highlight Section -->
+                                    <% for(let song of value.newrealse) {%>
+
+                                        <!-- Album Item -->
+                                        <div class=" playlistInnerDivs highlight" src="<%= song.src %>">
+                                            <img class="highlight-image" src="<%= song.imgSrc %>"
+                                                alt="<%= song.songName %>" />
+                                            <div id="songNew">
+                                                <h4 class="SongName highlight-title">
+                                                    <%= song.songName %>
+                                                </h4>
+                                                <p class="artistName highlight-artist">
+                                                    <%= song.artistName %>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <% }%>
+                                            <% }%>
+
+                                                <% if(value.Songs.length> 0) {%>
+                                                    <section class="section">
+                                                        <div class="section-title">Singles and EP</div>
+
+                                                        <div class="container_">
+                                                            <div class="scroll-container">
+                                                                <div class="heading-Music-topic">
+
+                                                                    <% for(let song of value.Songs) {%>
+                                                                        <div class=" playlistInnerDivs other-album"
+                                                                            src="<%= song.src %>">
+                                                                            <img class="album-cover"
+                                                                                src="<%= song.imgSrc %>"
+                                                                                alt="<%= song.songName %>" />
+                                                                            <h4 class="SongName album-title">
+                                                                                <%= song.songName %>
+                                                                            </h4>
+                                                                            <p class="artistName album-artist">
+                                                                                <%= song.artistName %>
+                                                                            </p>
+                                                                        </div>
+                                                                        <% }%>
+                                                                </div>
+                                                            </div>
+                                                            <div class="slider_btns">
+                                                                <div class="srcol_divs_right"><button
+                                                                        class="scroll-left">
+                                                                        <i
+                                                                            class="fa-solid fa-angle-right fa-rotate-180"></i></button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="slider_btns2">
+                                                                <div class="srcol_divs_right"><button
+                                                                        class="scroll-right">
+                                                                        <i class="fa-solid fa-angle-right"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <% }%>
+
+                                                        <% if(value.albums.length> 0) {%>
+                                                            <div class="section-title">Latest Release</div>
+                                                            <!-- Highlight Section -->
+                                                            <div class="album-divs">
+                                                                <% for(let song of value.albums) {%>
+                                                                    <a class=" playlistInnerDivs other-album"
+                                                                        href="<%= song.src %><%= song.name %>">
+                                                                        <img class="album-cover" src="<%= song.img %>"
+                                                                            alt="<%= song.name %>" />
+                                                                        <h4 class="SongName album-title">
+                                                                            <%= song.name %>
+                                                                        </h4>
+                                                                        <p class="artistName album-artist">
+                                                                            <%= song.artist %>
+                                                                        </p>
+                                                                    </a>
+                                                                    <% }%>
+                                                            </div>
+                                                            <% }%>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="midFooter">
+
+
+                        <div class="mid-div">
+                            <div class="mid-img">
+                                <div class="CreaditDiv">
+                                    <h1 id="leader">Devloped by </h1>
+                                    <div class="CreaditDiv">
+                                        <a href="https://www.instagram.com/amanrana6425/"  target="_blank" class="auto_type">Aman</a>
+                                        <a href="https://www.instagram.com/chamoli.sudhanshu/"  target="_blank" class="auto_type">Sudhanshu</a>
+                                        <a href="https://www.instagram.com/ri__shukie/"  target="_blank" class="auto_type">Rishabh</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <p>
+                                <hr><br><br>
+                            <p>By - Aman & Sudhanshu & Rishabh</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leftSide">
+
+            <div id="leftSideDivePosition">
+                <div class="allHead" id="headr_name"></div><button class="crossbtn"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <img src="/black screen.png" id="leftside">
+            <div id="left-SongInfo">
+                <span id="SongName-left"></span>
+                <span id="artistName-left"></span>
+                <span id="time-left"></span>
+            </div>
+
+            <div id="footerPart">
+                <div class="controls">
+                    <div class="progress-container">
+                        <span id="current-time">0:00</span>
+                        <input type="range" id="progress-bar" class="progress-bar" value="0">
+                        <span id="duration">0:00</span>
+                    </div>
+                    <div id="btnsCntrol">
+                        <button id="prev" class="control-btn"><i
+                                class="fa-solid fa-forward fa-flip-horizontal"></i></button>
+                        <button class="control-btn play"><i class="fa-solid fa-play"></i></button>
+                        <button id="next" class="control-btn"><i class="fa-solid fa-forward"></i></button>
+                    </div>
+
+                </div>
+            </div>
+            <div id="nextSongContainer"></div>
+
+
+            <div class="volume-control">
+                <button id="mute" class="control-btn">
+                    <i class="fa-solid fa-volume-low" style="color: #ffffff;"></i></button>
+                <input type="range" id="volume-bar" class="volume-bar" min="0" max="1" step="0.1" value="1">
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="music-btm">
+        <div class="song_bar">
+            <div class="btnsShow">
+
+                <div class="song-info">
+                    <div id="songImg">
+                        <img src="" id="songImgDesplay">
+                    </div>
+                    <div id="songNameInfo">
+                        <span id="SongName">hii</span>
+                        <span id="artistName">hi</span>
+                    </div>
+                </div>
+
+            </div>
+            <button id="platbtn_bar" class="control-btn play "><i class="fa-solid fa-play"></i></button>
+
+
+        </div>
+        <div class="shoeFooter">
+            <a href="/" class="HomeBtn"><i class="fa-solid fa-house"></i></a>
+            <button class="HomeBtn" id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="https://www.instagram.com/ri__shukie/" target="_blank" class="HomeBtn"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="" class="HomeBtn"><i class="fa-brands fa-snapchat"></i></a>
+        </div>
+    </div>
+    <audio id="audio" src=""></audio>
+    </div>
+    </div>
+    <script src="/app.js">
+    </script>
+    <script src="/search.js">
+    </script>
+    <script src="/singer.js">
+    </script>
+
+</body>
+
+</html>

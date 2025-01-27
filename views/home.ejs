@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="picture resource/title__logo.png" type="image/x-icon" id="v">
+</head>
+
+<body>
+    <div class="music-player">
+
+        <nav id="navBar">
+            <div id="logo"><img src="picture resource/nav-bar-logo.png" class="logo"><img
+                    src="picture resource/Name-logo.png" id="lGo"></div>
+
+
+
+            <div id="logo"></div>
+        </nav>
+
+        <div id="navMiddelPart">
+            <button id="backbtn"><i class="fa-solid fa-arrow-left"></i></button>
+            <h2>Search</h2>
+            <form id="searchForm" method="get" action="/song/">
+                <div id="allinputAndBTns">
+
+                    <div class="serchb-section">
+                        <div id="serch-sign"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+
+
+                        <input placeholder="What do you want to play?" id="searchBox" name="songname" autocomplete="off">
+
+
+
+
+                        <div id="cross"><i class="fa-regular fa-circle-xmark"></i></div>
+                    </div>
+                </div>
+                <div id="results">Play What You Love</div>
+            </form>
+        </div>
+
+
+
+
+        <div id="popUp">
+            <div class="welcome-container">
+                <h1>WARNING!</h1>
+                <p>In This Music Player Limited Song <br>If your Song not found please refresh the screen or <br> press
+                    Home Button. ! </p>
+            </div>
+        </div>
+        <!-- Left side -->
+        <div class="mainSecyionMusicLibary">
+
+
+            <div class="playlist">
+
+                <div id="x">
+                    <div id="left_1">Hey ! Welcome</div>
+                    <div class="left_2">
+                        <h5>This is our Music Player</h5>
+                        <span class="btn-left">Please Choose Song To Listen</span>
+                    </div>
+
+                    <div class="left_2">
+                        <h5>This is our Music Player</h5>
+                        <span class="btn-left">Please Choose Song To Listen</span>
+                    </div>
+                    <div class="left_2 left_3">
+
+                    </div>
+                </div>
+                <div id="playlist">
+                    <!-- Playlist will be generated dynamically -->
+
+                    <div class="head">Top Artists</div>
+                    <div class="container_">
+                        <div class="scroll-container">
+                            <div class="heading-Music-topic">
+
+
+
+                                <% if (instaData.TopArtists) { %>
+                                    <% Object.keys(instaData.TopArtists).forEach(function(key) { %>
+                                        <a class="singer-Divs  search_filter" href="<%= instaData.TopArtists[key].src %><%= instaData.TopArtists[key].name %>">
+                                            <img src="<%= instaData.TopArtists[key].img %>"
+                                                alt="<%= instaData.TopArtists[key].name %>" class="Artist-div"
+                                                width="150">
+                                            <div class="SongName">
+                                                <%= instaData.TopArtists[key].name %>
+                                            </div>
+                                            <div class="artistName">
+                                                <%=instaData.TopArtists[key].profession %>
+                                            </div>
+                                            <div class="play_btn_art"><button class="artist_btns"><i
+                                                        class="fa-solid fa-play"></i></button></div>
+                                        </a>
+                                        <% }); %>
+                                            <% } else { %>
+                                                <p>No top artists available.</p>
+                                                <% } %>
+
+                            </div>
+                        </div>
+                        <div class="slider_btns">
+                            <div class="srcol_divs_right"><button class="scroll-left">
+                                    <i class="fa-solid fa-angle-right fa-rotate-180"></i></button></div>
+                        </div>
+                        <div class="slider_btns2">
+                            <div class="srcol_divs_right"><button class="scroll-right">
+                                    <i class="fa-solid fa-angle-right"></i></button></div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="head">Jump back in</div>
+                    <div class="container_">
+                        <div class="scroll-container">
+                            <div class="heading-Music-topic">
+                                <% Object.keys(instaData.JumpBackIn).forEach(function(key) { %>
+                                    <div class="playlistInnerDivs search_filter "
+                                        src="<%= instaData.JumpBackIn[key].src %>">
+                                        <img src="<%= instaData.JumpBackIn[key].img %>" class="Music-imag">
+                                        
+                                        <div class="SongName">
+                                            <%= instaData.JumpBackIn[key].name %>
+                                        </div>
+                                        <div class="artistName">
+                                            <%= instaData.JumpBackIn[key].artist %>
+                                        </div>
+                                
+                                    </div>
+                                    <% }); %>
+
+                            </div>
+                        </div>
+                        <div class="slider_btns">
+                            <div class="srcol_divs_right"><button class="scroll-left">
+                                    <i class="fa-solid fa-angle-right fa-rotate-180"></i></button></div>
+                        </div>
+                        <div class="slider_btns2">
+                            <div class="srcol_divs_right"><button class="scroll-right">
+                                    <i class="fa-solid fa-angle-right"></i></button></div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="head">Top Albums</div>
+                    <div class="container_">
+                        <div class="scroll-container">
+                            <div class="heading-Music-topic">
+
+
+                                <% Object.keys(instaData.TopAlbums).forEach(function(key) { %>
+                                    <a class=" search_filter " href="<%= instaData.TopAlbums[key].src %><%= instaData.TopAlbums[key].name %>">
+                                        <img src="<%= instaData.TopAlbums[key].img %>" class="Music-imag">
+                                        
+                                        <div class="SongName">
+                                            <%= instaData.TopAlbums[key].name %>
+                                        </div>
+                                        <div class="artistName">
+                                            <% // Ensure the artist field is always an array var
+                                                artists=Array.isArray(instaData.TopAlbums[key].artist) ?
+                                                instaData.TopAlbums[key].artist : [{name:
+                                                instaData.TopAlbums[key].artist, profession: "Unknown" }];
+                                                artists.forEach(function(artist) { %>
+                                                <span class="artist">
+                                                    <%= artist.name %> - <%= artist.profession %><br>
+                                                </span>
+                                                <% }); %>
+                                        </div>
+
+                                        <div class="play_btn"><button><i class="fa-solid fa-play"></i></button></div>
+                                    </a>
+                                    <% }); %>
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="slider_btns">
+                            <div class="srcol_divs_right"><button class="scroll-left">
+                                    <i class="fa-solid fa-angle-right fa-rotate-180"></i></button></div>
+                        </div>
+                        <div class="slider_btns2">
+                            <div class="srcol_divs_right"><button class="scroll-right">
+                                    <i class="fa-solid fa-angle-right"></i></button></div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="midFooter">
+                        <div class="footer-container">
+                            <!-- Company Section -->
+                            <div class="footer-column">
+                                <h4>Company</h4>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Jobs</a></li>
+                                    <li><a href="#">For the Record</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Communities Section -->
+
+
+
+                            <!-- Gana BajaO Plans Section -->
+                            <div class="footer-column">
+                                <h4>Gana BajaO plans</h4>
+                                <ul>
+                                    <li><a href="#">Premium Individual</a></li>
+                                    <li><a href="#">Premium Duo</a></li>
+                                    <li><a href="#">Premium Family</a></li>
+                                    <li><a href="#">Premium Student</a></li>
+                                    <li><a href="#">Gana BajaO Free</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Social Icons -->
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div class="mid-div">
+                            <div class="mid-img">
+                                <div class="CreaditDiv">
+                                    <h1 id="leader">Devloped by </h1>
+
+                                    <div class="CreaditDiv">
+                                        <a href="https://www.instagram.com/amanrana6425/"  target="_blank" class="auto_type">Aman</a>
+                                        <a href="https://www.instagram.com/chamoli.sudhanshu/"  target="_blank" class="auto_type">Sudhanshu</a>
+                                        <a href="https://www.instagram.com/ri__shukie/"  target="_blank" class="auto_type">Rishabh</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <p>
+                                <hr><br><br>
+                            <p>By - Aman & Sudhanshu & Rishabh</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leftSide">
+
+                    <div id="leftSideDivePosition">
+                        <div class="allHead" id="headr_name"></div><button class="crossbtn"><i
+                                class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <img src="/black screen.png" id="leftside">
+                    <div id="left-SongInfo">
+                        <span id="SongName-left"></span>
+                        <span id="artistName-left"></span>
+                        <span id="time-left"></span>
+                    </div>
+
+                    <div id="footerPart">
+                        <div class="controls">
+                            <div class="progress-container">
+                                <span id="current-time">0:00</span>
+                                <input type="range" id="progress-bar" class="progress-bar" value="0">
+                                <span id="duration">0:00</span>
+                            </div>
+                            <div id="btnsCntrol">
+                                <button id="prev" class="control-btn"><i
+                                        class="fa-solid fa-forward fa-flip-horizontal"></i></button>
+                                        <button class="control-btn play "><i class="fa-solid fa-play"></i></button>
+                                <button id="next" class="control-btn"><i class="fa-solid fa-forward"></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="nextSongContainer"></div>
+
+
+                    <div class="volume-control">
+                        <button id="mute" class="control-btn">
+                            <i class="fa-solid fa-volume-low" style="color: #ffffff;"></i></button>
+                        <input type="range" id="volume-bar" class="volume-bar" min="0" max="1" step="0.1" value="1">
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="music-btm">
+        <div class="song_bar">
+        <div class="btnsShow">
+
+            <div class="song-info">
+                <div id="songImg">
+                    <img src="" id="songImgDesplay">
+                </div>
+                <div id="songNameInfo">
+                    <span id="SongName"></span>
+                    <span id="artistName"></span>
+                </div>
+                </div>
+                
+        </div>
+    <button id="platbtn_bar"class="control-btn play "><i class="fa-solid fa-play"></i></button>
+            
+    
+    </div>
+        <div class="shoeFooter">
+            <a href="/" class="HomeBtn"><i class="fa-solid fa-house"></i></a>
+            <button class="HomeBtn" id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="https://www.instagram.com/ri__shukie/" target="_blank" class="HomeBtn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="HomeBtn"><i class="fa-brands fa-snapchat"></i></a>
+        </div>
+    </div>
+        <audio id="audio" src=""></audio>
+    </div>
+    </div>
+    <script src="/app.js">
+    </script>
+    <script src="/search.js">
+    </script>
+
+</body>
+
+</html>

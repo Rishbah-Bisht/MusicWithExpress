@@ -1,0 +1,411 @@
+{
+    "Karan Aulja": {
+        "singerName": "Karan Aulja",
+        "imgSrc": "https://is3-ssl.mzstatic.com/image/thumb/AMCArtistImages122/v4/74/53/76/7453769f-9c28-0d2a-876a-0246d173fcde/caca207a-1fae-447d-a6a0-3545d3d9dfaf_file_cropped.png/480x480bb.jpg",
+        "listnerNo": "18.3M",
+        "artistImg": "https://preview.redd.it/day-2-drop-your-favourite-karan-aujla-bar-v0-vpobe1uk6csd1.jpeg?width=640&crop=smart&auto=webp&s=1a8cbcca0a5b858af6323e0f09a9f9ad135049ac",
+        "Topsongs": [
+            {
+                "songName": "Wavy",
+                "imgSrc": "https://i.scdn.co/image/ab67616d00001e02e34f05599c4a42e1cbb1c251",
+                "src": "/music/WAVY.mp3",
+                "artistName": "Karan Aujla, Mrxci"
+            },
+            {
+                "songName": "Tauba Tauba",
+                "imgSrc": "https://i.scdn.co/image/ab67616d0000b27344d3ba1bb25084d20dc66d52",
+                "src": "/music/Tauba Tauba (From  Bad Newz ) - Karan Aujla.m4a",
+                "artistName": "Karan Aujla"
+            },
+            {
+                "songName": "Softly",
+                "imgSrc": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
+                "src": "/music/SOFTLY.mp3",
+                "artistName": "Karan Aujla, Ikky"
+            },
+            {
+                "songName": "Winning Speech",
+                "imgSrc": "https://i.scdn.co/image/ab67616d0000b2734a7287c838cba6b00b15f085",
+                "src": "/music/Winning Speech - Karan Aujla, Mxrci.m4a",
+                "artistName": "Karan Aujla, Mrxci"
+            },
+            {
+                "songName": "White Brown Black",
+                "imgSrc": "https://i.scdn.co/image/ab67616d0000b27358c9caea7e001cc0a2819bcf",
+                "src": "/music/White Brown Black - Avvy Sra, Karan Aujla, Jaani.m4a",
+                "artistName": "Karan Aujla, Avvy Sara"
+            }
+        ],
+        "newrealse": [
+            {
+                "songName": "Aaye Haaye (Feat. Nora Fatehi)",
+                "imgSrc": "https://i.scdn.co/image/ab67616d0000b2732d6e67414038e30bae1a137b",
+                "src": "/music/Aaye Haye.mp3",
+                "artistName": "Karan Aujla, Nora Fatehi"
+            }
+        ],
+        "Songs": [
+            {
+                "songName": "Aaye Haaye (Feat. Nora Fatehi)",
+                "imgSrc": "https://i.scdn.co/image/ab67616d0000b2732d6e67414038e30bae1a137b",
+                "src": "/music/Aaye Haye.mp3",
+                "artistName": "Karan Aujla, Nora Fatehi"
+            },
+            {
+                "songName": "Sifar Safar",
+                "imgSrc": "https://i.scdn.co/image/ab67616d0000b273c692476863223d525354014e",
+                "src": "/music/Sifar Safar - Karan Aujla.m4a",
+                "artistName": "Karan Aujla"
+            },
+            {
+                "songName": "Guilty",
+                "imgSrc": "https://i.scdn.co/image/ab67616d0000b27331a3b69364ba512e8355ea60",
+                "src": "/music/Guilty - Inder Chahal, Karan Aujla.m4a",
+                "artistName": "Karan Aujla, Inder Chahal"
+            },
+            {
+                "songName": "God Damn",
+                "imgSrc": "https://i.scdn.co/image/ab67616d00001e029bb2d30b01ac2cada8a8ad03",
+                "src": "/music/God Damn.mp3",
+                "artistName": "Karan Aujla, Badshah"
+            }
+        ],
+        "albums": [
+            {
+                "name": "Making Memories",
+                "artist": "Karan Aulja,Ikky",
+                "img": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
+                "src": "/song/?songname="
+            },
+            {
+                "name": "Street Dreams",
+                "artist": "Divine, Karan Aujla",
+                "img": "https://c.saavncdn.com/505/Street-Dreams-Hindi-2024-20240220085345-500x500.jpg",
+                "src": "/song/?songname="
+            }
+        ]
+    },
+    "Sidhu Moose Wala": {
+    "singerName": "Sidhu Moose Wala",
+    "imgSrc": "https://i1.sndcdn.com/artworks-dANXnr8jThsWNpXE-ZfEYeQ-t500x500.jpg",  
+    "listnerNo": "8.7M", 
+    "artistImg": "https://i.scdn.co/image/ab67616d0000b2731cf092f7828a17c0790e2f00",  
+    "Topsongs": [
+        {
+            "songName": "Level",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b2731cf092f7828a17c0790e2f00",
+            "src": "/music/Levels - Sidhu Moose Wala, Sunny Malton, The Kidd.m4a",
+            "artistName": "Sidhu Moose Wala, Sunny Malton, The Kidd"
+        },
+        {
+            "songName": "Chorni",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b27392c32f95f518a1153a339117",
+            "src": "/music/Chorni - DIVINE, Sidhu Moose Wala.m4a",
+            "artistName": "Sidhu Moose Wala, DIVINE"
+        },
+        {
+            "songName": "Dawood",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b273fec91fd3e8892d0b79d7a1a4",
+            "src": "/music/Dawood - Sidhu Moose Wala.m4a",
+            "artistName": "Sidhu Moose Wala, Ikky"
+        },
+        {
+            "songName": "Dollar (From Dakuaan Da Munda)",
+            "imgSrc": "https://i.scdn.co/image/ab67616d00001e02470b50ae54fe8dfb410901ce",
+            "src": "/music/Dollar - From  Dakuaan Da Munda  - Sidhu Moose Wala, Byg Byrd.m4a",
+            "artistName": "Sidhu Moose Wala, Byg Byrd"
+        },
+        {
+            "songName": "East Side Flow",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b273079710241dcf07cdeae6b145",
+            "src": "/music/East Side Flow - Sidhu Moose Wala.m4a",
+            "artistName": "Sidhu Moose Wala"
+        }
+    ],
+    "newrealse": [
+        {
+            "songName": "Bloodlust",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b273fd2e3126a9d286550f9921a2",
+            "src": "/music/Bloodlust - Sidhu Moose Wala, Mr. Capone-E.m4a",
+            "artistName": "Sidhu Moose Wala, Mr. Capone-E"
+        }
+    ],
+    "Songs": [
+        {
+            "songName": "Same Beef",
+            "imgSrc": "https://i.scdn.co/image/ab67616d00001e02d6181999e3c1c1bb525f9989",
+            "src": "/music/Same Beef - Bohemia, Sidhu Moose Wala.m4a",
+            "artistName": "Sidhu Moose Wala"
+        },
+        {
+            "songName": "These Days (feat. Bohemia)",
+            "imgSrc": "https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae",
+            "src": "/music/These Days (feat. Bohemia) - Sidhu Moose Wala, Bohemia.m4a",
+            "artistName": "Sidhu Moose Wala, Bohemia"
+        },
+        {
+            "songName": "Drippy",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b273d20559cc286e592ebf0240c8",
+            "src": "/music/Drippy - Sidhu Moose Wala, Mxrci, AR Paisley.m4a",
+            "artistName": "Sidhu Moose Wala, Mxrci"
+        },
+        {
+            "songName": "295",
+            "imgSrc": "https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae",
+            "src": "/other's/Album's html file's/11.Moosetape/295 - Sidhu Moose Wala.m4a",
+            "artistName": "Sidhu Moose Wala"
+        },
+        {
+            "songName": "So High",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b27321f13eb2d62c7d93edee98b3",
+            "src": "/music/So High - Sidhu Moose Wala.m4a",
+            "artistName": "Sidhu Moose Wala, Byg Byrd"
+        }
+    ],
+    "albums": [
+        {
+            "name": "Moosetape",
+            "artist": "Sidhu Moose Wala",
+            "img": "https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae",
+            "src": "/song/?songname="
+        },
+        {
+            "name": "No Name",
+            "artist": "Sidhu Moose Wala",
+            "img": "https://upload.wikimedia.org/wikipedia/en/b/b2/No_Name_Sidhu_Moose_Wala.jpg",
+            "src": "/song/?songname="
+        }
+    ]
+},
+"Shreya Ghoshal": {
+    "singerName": "Shreya Ghoshal",
+    "imgSrc": "https://i.scdn.co/image/ab6761610000e5eb59303d54ce789210e745e1a9",  
+    "listnerNo": "43.3M",  
+    "artistImg": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84f2836295d5df39844017c8a3", 
+    "Topsongs": [
+        {
+            "songName": "Agar Tum Mil Jao",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b273d612fa4d0c366764a829dc99",
+            "src": "/music/Agar.m4a",
+            "artistName": "Shreya Ghoshal, Roopkumar Rathod, Anu Malik"
+        },
+        {
+            "songName": "Jaadu Hai Nasha",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b27338c25fc7f2ba04db55c81ba7",
+            "src": "/music/Jadu Hai Nasha Hai - 2002 - Shreya Ghoshal, Neelesh Misra.m4a",
+            "artistName": "Neelesh Misra, Shreya Ghoshal, Shaan"
+        },
+        {
+            "songName": "Ye Ishq Hai",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b27352fe6875028c892308ffc2f7",
+            "src": "/music/Ye Ishq Hai - Pritam, Shreya Ghoshal, Irshad Kamil.m4a",
+            "artistName": "Pritam, Shreya Ghoshal"
+        },
+        {
+            "songName": "Hazaar Baar (From \"Baby John\")",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b2732bced235b123909d05644a29",
+            "src": "/music/Hazaar Baar.m4a",
+            "artistName": "Irshad Kamil, Arijit Singh, Shreya Ghoshal"
+        },
+        {
+            "songName": "Saibo",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b2731aac2079e5047e1bfd1b59d9",
+            "src": "/music/Saibo - Sachin-Jigar, Shreya Ghoshal, Tochi Raina.m4a",
+            "artistName": "Sachin-Jigar, Shreya Ghoshal, Tochi Raina"
+        }
+    ],
+    "newrealse": [
+   
+    ],
+    "Songs": [
+        {
+            "songName": "Chikni Chameli",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b273b22e21de789378f223e1795f",
+            "src": "/music/Chikni Chameli - Ajay-Atul, Shreya Ghoshal.m4a",
+            "artistName": "Ajay-Atul, Shreya Ghoshal"
+        },
+        {
+            "songName": "Dola Re Dola (From \"Devdas\")",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b27380688ed9c3949492c9353a43",
+            "src": "/music/Dola Re Dola - From Devdas - Kavita Krishnamurthy, Shreya Ghoshal, KK.m4a",
+            "artistName": "Kavita Krishnamurthy, Shreya Ghoshal, KK"
+        },
+        {
+            "songName": "Ooh La La",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b27354ab341c139cfe4dc15d2d39",
+            "src": "/music/Ooh La La - Vishal-Shekhar, Bappi Lahiri, Shreya Ghoshal.m4a",
+            "artistName": "Vishal & Shekhar, Bappi Lahiri, Shreya Ghoshal"
+        },
+        {
+            "songName": "Angaaron (From \"Pushpa 2 The Rule\")",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b273b3b485c05c0c8a4893612544",
+            "src": "/music/Angaaron.m4a",
+            "artistName": "Shreya Ghoshal, Devi Sri Prasad, Raquee"
+        },
+        {
+            "songName": "Dil Dooba",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b27318463e8c010147732c5ba7ca",
+            "src": "/music/Dil Dooba - Sonu Nigam, Shreya Ghoshal.m4a",
+            "artistName": "Sonu Nigam, Shreya Ghoshal"
+        }
+    ],
+    "albums": [] 
+},"Yo Yo Honey Singh": {
+    "singerName": "Yo Yo Honey Singh",
+    "imgSrc": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202412/honey-singh-021109572-1x1.jpg?VersionId=DFPqp0dDnn0.66GH83w7YszXOxfaFiIj", 
+    "listnerNo": "22M", 
+    "artistImg": "https://c.saavncdn.com/279/Blue-Eyes-2013-500x500.jpg", 
+    "Topsongs": [
+        {
+            "songName": "Blue Eyes",
+            "imgSrc": "https://c.saavncdn.com/279/Blue-Eyes-2013-500x500.jpg",
+            "src": "/music/Blue Eyes - Yo Yo Honey Singh.m4a",
+            "artistName": "Yo Yo Honey Singh"
+        },
+        {
+            "songName": "Desi Kalakaar",
+            "imgSrc": "https://i1.sndcdn.com/artworks-000089362376-hlu315-t500x500.jpg",
+            "src": "/music/Desi Kalakaar - Yo Yo Honey Singh.m4a",
+            "artistName": "Yo Yo Honey Singh"
+        },
+        {
+            "songName": "Dheere Dheere",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b273d2ca4ba1030b7fefd8e53464",
+            "src": "/music/Dheere Dheere - Yo Yo Honey Singh.m4a",
+            "artistName": "Yo Yo Honey Singh"
+        },
+        {
+            "songName": "Kalaastar (From Honey 3.0)",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b273c279c63a20be981bddcbec61",
+            "src": "/music/Kalaastar.m4a",
+            "artistName": "Yo Yo Honey Singh, Rony Ajnali, Gill Machhrai"
+        },
+        {
+            "songName": "Love Dose",
+            "imgSrc": "https://c.saavncdn.com/304/Desi-Kalakaar-Hindi-2014-500x500.jpg",
+            "src": "/music/Love Dose - Yo Yo Honey Singh.m4a",
+            "artistName": "Yo Yo Honey Singh"
+        }
+    ],
+    "newrealse": [
+       
+    ],
+    "Songs": [
+        {
+            "songName": "One Bottle Down",
+            "imgSrc": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/94/2f/d9/942fd9f8-cc37-d90c-530e-3b6367005db6/8903431606457_cover.jpg/1200x1200bb.jpg",
+            "src": "/music/One Bottle Down - Yo Yo Honey Singh.m4a",
+            "artistName": "Yo Yo Honey Singh"
+        },
+        {
+            "songName": "Rounds N Ring",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+            "src": "/music/Rounds N Ring - Yo Yo Honey Singh, Navaan Sandhu, Bonafide.m4a",
+            "artistName": "Yo Yo Honey Singh, Navaan Sandhu, Bonafide"
+        },
+        {
+            "songName": "Vigdiyan Heeran (From Honey 3.0)",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b273c279c63a20be981bddcbec61",
+            "src": "/music/Vigdiyan Heeran.m4a",
+            "artistName": "Yo Yo Honey Singh, Rony Ajnali, Gill Machhrai"
+        }
+    ],
+    "albums": [
+        {
+            "name": "Glory",
+            "artist": "Yo Yo Honey Singh",
+            "img": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+            "src": "/song/?songname="
+        },
+        {
+            "name": "International Villager's",
+            "artist": "Yo Yo Honey Singh",
+            "img": "https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4",
+            "src": "/song/?songname="
+        }
+    ] 
+},"Arijit Singh": {
+    "singerName": "Arijit Singh",
+    "imgSrc": "https://media.insider.in/image/upload/c_crop,g_custom/v1728462701/yiwwlrbe78ahhohjjmum.jpg", 
+    "listnerNo": "42.9M",  
+    "artistImg": "https://media.insider.in/image/upload/c_crop,g_custom/v1728462701/yiwwlrbe78ahhohjjmum.jpg",  
+    "Topsongs": [
+        {
+            "songName": "Soulmate",
+            "imgSrc": "https://i1.sndcdn.com/artworks-rZkQMZeOrWfb9a2V-Wyp3BA-t240x240.jpg",
+            "src": "/music/Soulmate.mp3",
+            "artistName": "Arijit Singh, Badshah",
+            "duration": "03:33"
+        },
+        {
+            "songName": "Saajni",
+            "imgSrc": "https://c.saavncdn.com/252/Laapataa-Ladies-Hindi-2024-20241104085935-500x500.jpg",
+            "src": "/music/Sajni.mp3",
+            "artistName": "Arijit Singh",
+            "duration": "02:26"
+        },
+        {
+            "songName": "Tainu Khabar Nahi",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b27367a876fee5cd00ed0f395a9e",
+            "src": "/music/Tainu Khabar Nahi.mp3",
+            "artistName": "Arijit Singh",
+            "duration": "02:38"
+        },
+        {
+            "songName": "Ruaan",
+            "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYLWI_eY_F4QcLyXk3ebEobeoYdtMBBXo7CQ&s",
+            "src": "/music/Ruaan.mp3",
+            "artistName": "Arijit Singh",
+            "duration": "03:06"
+        },
+        {
+            "songName": "O Maahi",
+            "imgSrc": "https://c.saavncdn.com/058/O-Maahi-From-Dunki-Hindi-2023-20231211171007-500x500.jpg",
+            "src": "/music/O Mahi.mp3",
+            "artistName": "Arijit Singh",
+            "duration": "04:06"
+        }
+    ],
+    "newrealse": [
+        {
+            "songName": "Tenu Sang Rakhna",
+            "imgSrc": "https://c.saavncdn.com/415/Tenu-Sang-Rakhna-From-Jigra-Hindi-2024-20241003174013-500x500.jpg",
+            "src": "/music/Tenu Sang Rakhna.mp3",
+            "artistName": "Arijit Singh, Anumita Nadesan"
+        }
+    ],
+    "Songs": [
+        {
+            "songName": "Deva Deva (From \"Bramastra\")",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b27348988194ba040796bf8033d4",
+            "src": "/music/Deva Deva.mp3",
+            "artistName": "Arijit Singh"
+        },
+        {
+            "songName": "Jaan Nishar (From \"Kedarnath\")",
+            "imgSrc": "https://c.saavncdn.com/367/Kedarnath-Hindi-2019-20190219-500x500.jpg",
+            "src": "/music/Jaan Nishar.mp3",
+            "artistName": "Arijit Singh"
+        },
+        {
+            "songName": "DilliWali Girlfriend (From \"Yeh Jawani Hai Dewaani\")",
+            "imgSrc": "https://i.scdn.co/image/ab67616d0000b273707ea5b8023ac77d31756ed4",
+            "src": "/MILLIONAIRE.mp3",
+            "artistName": "Arijit Singh"
+        },
+        {
+            "songName": "Tere Sang Ishq Hua (From \"Yodha\")",
+            "imgSrc": "https://i.scdn.co/image/ab67616d00001e02e5fd1d3b8d73c475f9344b3c",
+            "src": "/music/Tere Sang Ishq Hua.mp3",
+            "artistName": "Arijit Singh"
+        },
+        {
+            "songName": "Saajni (From \"Laapata Ladies\")",
+            "imgSrc": "https://c.saavncdn.com/252/Laapataa-Ladies-Hindi-2024-20241104085935-500x500.jpg",
+            "src": "/music/Sajni.mp3",
+            "artistName": "Arijit Singh"
+        }
+    ],
+    "albums": []  
+}
+}

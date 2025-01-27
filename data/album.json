@@ -1,0 +1,992 @@
+{
+  "Making Memories": {
+    "albumName": "Making Memories",
+    "imgSrc": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
+    "artistName": "Karan Aujla, Ikky",
+    "artistImg": "https://preview.redd.it/day-2-drop-your-favourite-karan-aujla-bar-v0-vpobe1uk6csd1.jpeg?width=640&crop=smart&auto=webp&s=1a8cbcca0a5b858af6323e0f09a9f9ad135049ac",
+    "songs": [
+      {
+        "songName": "Admirn' You",
+        "imgSrc": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
+        "src": "/music/Admirin.mp3",
+        "artistName": "Karan Aujla, Ikky"
+      },
+      {
+        "songName": "Try Me",
+        "imgSrc": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
+        "src": "/music/Try Me.mp3",
+        "artistName": "Karan Aujla, Ikky"
+      },
+      {
+        "songName": "Softly",
+        "imgSrc": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
+        "src": "/music/SOFTLY.mp3",
+        "artistName": "Karan Aujla, Ikky"
+      },
+      {
+        "songName": "What..?",
+        "imgSrc": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
+        "src": "/music/what Karan Aujla.mp3",
+        "artistName": "Karan Aujla, Ikky"
+      },
+      {
+        "songName": "Jee Ni Lagda",
+        "imgSrc": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
+        "src": "/music/Jee Ni Lagda.mp3",
+        "artistName": "Karan Aujla, Ikky"
+      },
+      {
+        "songName": "Champion's Anthem",
+        "imgSrc": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
+        "src": "/music/Champions Anthem.mp3",
+        "artistName": "Karan Aujla, Ikky"
+      },
+      {
+        "songName": "You",
+        "imgSrc": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
+        "src": "/music/You.mp3",
+        "artistName": "Karan Aujla, Ikky"
+      },
+      {
+        "songName": "GirL, I love You",
+        "imgSrc": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
+        "src": "/music/Girl, I Love You.mp3",
+        "artistName": "Karan Aujla, Ikky"
+      },
+      {
+        "songName": "Bachke Bachke",
+        "imgSrc": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
+        "src": "/music/Bachke Bachke Karan Aujla.mp3",
+        "artistName": "Karan Aujla, Ikky"
+      }
+    ]
+  },
+
+
+
+
+  "Street Dreams": {
+    "albumName": "Street Dreams",
+    "imgSrc": "https://c.saavncdn.com/505/Street-Dreams-Hindi-2024-20240220085345-500x500.jpg",
+    "artistName": "Divine, Karan Aujla",
+    "artistImg":"https://i.scdn.co/image/ab67616100005174e4bae1cd1803402a906b61ba",
+    "songs": [
+      {
+        "songName": "Nothing Lasts",
+        "imgSrc": "https://c.saavncdn.com/505/Street-Dreams-Hindi-2024-20240220085345-500x500.jpg",
+        "src": "/music/Hisaab - DIVINE, Karan Aujla.m4a",
+        "artistName": "Divine, Karan Aujla"
+      },
+      {
+        "songName": "Top Class / Overseas",
+        "imgSrc": "https://c.saavncdn.com/505/Street-Dreams-Hindi-2024-20240220085345-500x500.jpg",
+        "src": "/music/Top Class   Overseas - DIVINE, Karan Aujla.m4a",
+        "artistName": "Divine, Karan Aujla"
+      },
+      {
+        "songName": "Straight Ballin'",
+        "imgSrc": "https://c.saavncdn.com/505/Street-Dreams-Hindi-2024-20240220085345-500x500.jpg",
+        "src": "/music/Straight Ballin' - Karan Aujla, DIVINE.m4a",
+        "artistName": "Divine, Karan Aujla"
+      },
+      {
+        "songName": "Yaad",
+        "imgSrc": "https://c.saavncdn.com/505/Street-Dreams-Hindi-2024-20240220085345-500x500.jpg",
+        "src": "/music/Yaad - Karan Aujla, DIVINE, Jonita Gandhi.m4a",
+        "artistName": "Divine, Karan Aujla"
+      },
+      {
+        "songName": "Tareefan",
+        "imgSrc": "https://c.saavncdn.com/505/Street-Dreams-Hindi-2024-20240220085345-500x500.jpg",
+        "src": "/music/Tareefan - Karan Aujla, DIVINE.m4a",
+        "artistName": "Divine, Karan Aujla"
+      },
+      {
+        "songName": "Hisaab",
+        "imgSrc": "https://c.saavncdn.com/505/Street-Dreams-Hindi-2024-20240220085345-500x500.jpg",
+        "src": "/music/Hisaab - DIVINE, Karan Aujla.m4a",
+        "artistName": "Divine, Karan Aujla"
+      },
+      {
+        "songName": "100 Million",
+        "imgSrc": "https://c.saavncdn.com/505/Street-Dreams-Hindi-2024-20240220085345-500x500.jpg",
+        "src": "/music/100 Million - DIVINE, Karan Aujla.m4a",
+        "artistName": "Divine, Karan Aujla"
+      }
+    ]
+  },
+
+
+
+  "Chali Bhai Motor Chali": {
+    "albumName": "Chali Bhai Motor Chali",
+    "imgSrc": "https://i.scdn.co/image/ab67616d00001e02c31f08ab805d84cb4fbf6968",
+    "artistName": "Narendra Singh Negi, Meena Rana",
+    "artistImg":"https://artistsimages.b-cdn.net/narendra-singh-negi/narendra-singh-negi-1.jpg",
+    "songs": [
+      {
+        "songName": "Mera Dandi Kanthiyon Ka Muluk",
+        "imgSrc": "https://i.scdn.co/image/ab67616d00001e02c31f08ab805d84cb4fbf6968",
+        "src": "/music/Mera Dandi Kanthi Ka Muluk.mp3",
+        "artistName": "Narendra Singh Negi, Meena Rana"
+      },
+      {
+        "songName": "Veeru Bhado Ku Desh",
+        "imgSrc": "https://i.scdn.co/image/ab67616d00001e02c31f08ab805d84cb4fbf6968",
+        "src": "/music/Biroo Bhadu Ku Desh.mp3",
+        "artistName": "Narendra Singh Negi, Meena Rana"
+      },
+      {
+        "songName": "Chali Bhai Motar Chali",
+        "imgSrc": "https://i.scdn.co/image/ab67616d00001e02c31f08ab805d84cb4fbf6968",
+        "src": "/music/Chali Bhai Motar Chali.mp3",
+        "artistName": "Narendra Singh Negi, Meena Rana"
+      },
+      {
+        "songName": "Na Baith Na Baith Bindi Charkhi Maa",
+        "imgSrc": "https://i.scdn.co/image/ab67616d00001e02c31f08ab805d84cb4fbf6968",
+        "src": "/music/Na Baith Bindi Charkhi Maa.mp3",
+        "artistName": "Narendra Singh Negi, Meena Rana"
+      },
+      {
+        "songName": "Door Pardesh Chhaon",
+        "imgSrc": "https://i.scdn.co/image/ab67616d00001e02c31f08ab805d84cb4fbf6968",
+        "src": "/music/Door Pardesh Chhaoo.mp3",
+        "artistName": "Narendra Singh Negi, Meena Rana"
+      },
+      {
+        "songName": "Kanu Ladki Bigdi Miyaru",
+        "imgSrc": "https://i.scdn.co/image/ab67616d00001e02c31f08ab805d84cb4fbf6968",
+        "src": "/music/Kanu Ladki Bigdi.mp3",
+        "artistName": "Narendra Singh Negi, Meena Rana"
+      },
+      {
+        "songName": "He Ganga Ji Ki Aut",
+        "imgSrc": "https://i.scdn.co/image/ab67616d00001e02c31f08ab805d84cb4fbf6968",
+        "src": "/music/Gangaji Ji Ki Aut.mp3",
+        "artistName": "Narendra Singh Negi, Meena Rana"
+      },
+      {
+        "songName": "Na Kata Taun Daliyon",
+        "imgSrc": "https://i.scdn.co/image/ab67616d00001e02c31f08ab805d84cb4fbf6968",
+        "src": "/music/Na Kata Tau Dalyun.mp3",
+        "artistName": "Narendra Singh Negi, Meena Rana"
+      },
+      {
+        "songName": "Ghuguti Ghuron Laigi",
+        "imgSrc": "https://i.scdn.co/image/ab67616d00001e02c31f08ab805d84cb4fbf6968",
+        "src": "/music/Ghuguti Ghuraona.mp3",
+        "artistName": "Narendra Singh Negi, Meena Rana"
+      }
+    ]
+  },
+
+
+
+  "International Villager's": {
+    "albumName": "International Villager's",
+    "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4",
+    "artistName": "Yo Yo Honey Singh",
+    "artistImg":"https://yourdost-blog-images.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2016/03/23170222/honey-story_650_043014055557.jpg",
+    "songs": [
+      {
+        "songName": "Get up Jawani",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4",
+        "src": "/music/Get Up Jawani.mp3",
+        "artistName": "Yo Yo Honey Singh, Badshah"
+      },
+      {
+        "songName": "Dope Shope",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4",
+        "src": "/music/Dope Shope.mp3",
+        "artistName": "Yo Yo Honey Singh, Deep Money"
+      },
+      {
+        "songName": "Gabru",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4",
+        "src": "/music/Gabru.mp3",
+        "artistName": "J Star ft. Yo Yo Honey Singh"
+      },
+      {
+        "songName": "Yaad",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4",
+        "src": "/music/Yaad.mp3",
+        "artistName": "Yo Yo Honey Singh, Romey Gill"
+      },
+      {
+        "songName": "Angreji Beat",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4",
+        "src": "/music/Angreji.mp3",
+        "artistName": "Yo Yo Honey Singh, Gippy Grewal"
+      },
+      {
+        "songName": "Goliyan",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4",
+        "src": "/music/Goliyan.mp3",
+        "artistName": "Yo Yo Honey Singh, Diljit Dosanjh"
+      },
+      {
+        "songName": "Brown Rang",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4",
+        "src": "/music/Brown Rang.mp3",
+        "artistName": "Yo Yo Honey Singh"
+      },
+      {
+        "songName": "Aashke",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4",
+        "src": "/music/Aashke.mp3",
+        "artistName": "Yo Yo Honey Singh"
+      },
+      {
+        "songName": "Beautiful",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4",
+        "src": "/music/Beautiful.mp3",
+        "artistName": "Yo Yo Honey Singh"
+      },
+      {
+        "songName": "Sambhle",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4",
+        "src": "/music/Sambhle.mp3",
+        "artistName": "Yo Yo Honey Singh"
+      },
+      {
+        "songName": "Yadaan",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ca6243433c75d8ccfc39e3c4",
+        "src": "/music/Yadaan.mp3",
+        "artistName": "Yo Yo Honey Singh"
+      }
+    ]
+  },
+  "This is Arijit Singh": {
+    "albumName": "This is Arijit Singh",
+    "imgSrc": "https://i.scdn.co/image/ab67706f0000000285c716247c24f66ef40f011e",
+    "artistName": "Arijit Singh",
+    "artistImg":"https://i.pinimg.com/736x/e8/d0/9d/e8d09dc7491d9801c8edb409a40186c7.jpg",
+    "songs": [
+      {
+        "songName": "Kasturi",
+        "imgSrc": "https://c.saavncdn.com/000/Amar-Prem-Ki-Prem-Kahani-Original-Motion-Picture-Soundtrack-Hindi-2024-20240919164307-500x500.jpg",
+        "src": "/music/Kasturi.mp3",
+        "artistName": "Arijit Singh"
+
+      },
+      {
+        "songName": "Tere Sang Ishq Hua",
+        "imgSrc": "https://i.scdn.co/image/ab67616d00001e02e5fd1d3b8d73c475f9344b3c",
+        "src": "/music/Tere Sang Ishq Hua.mp3",
+        "artistName": "Arijit Singh, Neeti Mohan"
+
+      },
+      {
+        "songName": "Safar",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273528fb1e7255da2a7a9652be5",
+        "src": "/music/Safar.mp3",
+        "artistName": "Arijit Singh"
+
+      },
+      {
+        "songName": "Soulmate",
+        "imgSrc": "https://i1.sndcdn.com/artworks-rZkQMZeOrWfb9a2V-Wyp3BA-t240x240.jpg",
+        "src": "/music/Soulmate.mp3",
+        "artistName": "Arijit Singh, Badshah"
+
+      },
+      {
+        "songName": "Saajni",
+        "imgSrc": "https://c.saavncdn.com/252/Laapataa-Ladies-Hindi-2024-20241104085935-500x500.jpg",
+        "src": "/music/Sajni.mp3",
+        "artistName": "Arijit Singh"
+
+      },
+      {
+        "songName": "Tainu Khabar Nahi",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b27367a876fee5cd00ed0f395a9e",
+        "src": "/music/Tainu Khabar Nahi.mp3",
+        "artistName": "Arijit Singh"
+
+      },
+      {
+        "songName": "Ruaan",
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYLWI_eY_F4QcLyXk3ebEobeoYdtMBBXo7CQ&s",
+        "src": "/music/Ruaan.mp3",
+        "artistName": "Arijit Singh"
+
+      },
+      {
+        "songName": "O Maahi",
+        "imgSrc": "https://c.saavncdn.com/058/O-Maahi-From-Dunki-Hindi-2023-20231211171007-500x500.jpg",
+        "src": "/music/O Mahi.mp3",
+        "artistName": "Arijit Singh"
+
+      },
+      {
+        "songName": "Tenu Sang Rakhna",
+        "imgSrc": "https://c.saavncdn.com/415/Tenu-Sang-Rakhna-From-Jigra-Hindi-2024-20241003174013-500x500.jpg",
+        "src": "/music/Tenu Sang Rakhna.mp3",
+        "artistName": "Arijit Singh, Anumita Nadesan"
+
+      },
+      {
+        "songName": "Daarkhast",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273e7fe7d656750737e8d369f95",
+        "src": "/music/Daarkhast.mp3",
+        "artistName": "Arijit Singh"
+
+      },
+      {
+        "songName": "Man Jogiya",
+        "imgSrc": "https://cdn-images.dzcdn.net/images/cover/6ba91b08c4722330d751552433d16f02/0x1900-000000-80-0-0.jpg",
+        "src": "/music/Man Jogiya.mp3",
+        "artistName": "Arijit Singh"
+
+      },
+      {
+        "songName": "Deva Deva",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b27348988194ba040796bf8033d4",
+        "src": "/music/Deva Deva.mp3",
+        "artistName": "Arijit Singh"
+
+      }
+    ]
+  },
+  "High Rated Gabru": {
+    "albumName": "High Rated Gabru",
+    "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+    "artistName": "Guru Randhawa",
+    "artistImg":"https://cinetown.s3.ap-south-1.amazonaws.com/people/profile_img/1702998246.jpeg",
+    "songs": [
+      {
+        "songName": "High Rated Gabru (From \"High Rated Gabru\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/High Rated Gabru (From  High Rated Gabru ) - Guru Randhawa.m4a",
+        "artistName": "Guru Randhawa"      },
+      {
+        "songName": "Lahore (From \"Lahore\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music//Lahore (From  Lahore ) - Guru Randhawa.m4a",
+        "artistName": "Guru Randhawa"      },
+      {
+        "songName": "Made In India (From \"Made In India\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Made In India (From  Made In India ) - Guru Randhawa.m4a",
+        "artistName": "Guru Randhawa"      },
+      {
+        "songName": "Suit (From \"Suit\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Suit (From  Suit ) - Guru Randhawa, Arjun.m4a",
+        "artistName": "Guru Randhawa, Arjun"      },
+      {
+        "songName": "Ishare Tere (From \"Ishare Tere\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Ishare Tere (From  Ishare Tere ) - Guru Randhawa, Dhvani Bhanushali.m4a",
+        "artistName": "Guru Randhawa, Dhvani Bhanushali"      },
+      {
+        "songName": "Fashion (From \"Fashion\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Fashion (From  Fashion ) - Guru Randhawa.m4a",
+        "artistName": "Guru Randhawa"      },
+      {
+        "songName": "Raat Kamaal Hai (From \"Raat Kamaal Hai\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Raat Kamaal Hai (From  Raat Kamaal Hai ) - Guru Randhawa, Tulsi Kumar.m4a",
+        "artistName": "Guru Randhawa, Tulsi Kumar"      },
+      {
+        "songName": "Downtown (From \"Downtown\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Downtown (From  Downtown ) - Guru Randhawa.m4a",
+        "artistName": "Guru Randhawa"      },
+      {
+        "songName": "Patola (From \"Patola\") (feat. Bohemia)",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Patola (From  Patola ) (feat. Bohemia) - Guru Randhawa, Bohemia.m4a",
+        "artistName": "Guru Randhawa, Bohemia"      },
+      {
+        "songName": "Yaar Mod Do (From \"Yaar Mod Do\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Yaar Mod Do (From  Yaar Mod Do ) - Guru Randhawa, Millind Gaba.m4a",
+        "artistName": "Guru Randhawa, Millind Gaba"      },
+      {
+        "songName": "Tere Te (From \"Tere Te\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Tere Te (From  Tere Te ) - Guru Randhawa, Ikka.m4a",
+        "artistName": "Guru Randhawa, Ikka"      },
+      {
+        "songName": "Morni Banke (From \"Badhaai Ho\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Morni Banke (From  Badhaai Ho ) - Guru Randhawa, Neha Kakkar.m4a",
+        "artistName": "Guru Randhawa, Neha Kakkar"      },
+      {
+        "songName": "Ban Ja Rani (From \"Tumhari Sulu\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Ban Ja Rani (From  Tumhari Sulu ) - Guru Randhawa.m4a",
+        "artistName": "Guru Randhawa"      },
+      {
+        "songName": "Kaun Nachdi (From \"Sonu Ke Titu Ki Sweety\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Kaun Nachdi (From  Sonu Ke Titu Ki Sweety ) - Guru Randhawa, Neeti Mohan.m4a",
+        "artistName": "Guru Randhawa, Neeti Mohan"      },
+      {
+        "songName": "Daaru Wargi (From \"Why Cheat India\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Daaru Wargi (From  Why Cheat India ) - Guru Randhawa.m4a",
+        "artistName": "Guru Randhawa"      },
+      {
+        "songName": "Nachle Na (From \"Dil Juunglee\")",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Nachle Na (From  Dil Juunglee ) - Guru Randhawa, Neeti Mohan.m4a",
+        "artistName": "Guru Randhawa, Neeti Mohan"      },
+      {
+        "songName": "Khat (From \"Khat\") (feat. Ikka)",
+        "imgSrc": "https://c.saavncdn.com/344/High-Rated-Gabru-Punjabi-2017-500x500.jpg",
+        "src": "/music/Khat (From  Khat ) (feat. Ikka) - Guru Randhawa, Ikka.m4a",
+        "artistName": "Guru Randhawa, Ikka"      }
+    ]
+  },
+
+
+  "G.O.A.T": {
+    "albumName": "G.O.A.T",
+    "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+    "artistName": "Diljit Dosanjh",
+    "artistImg":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSicgNFvf2VG_1R9rp85hqzz8dvDkdU5bZj6Q&s",
+    "songs": [
+      {
+        "songName": "Intro",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Intro - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "G.O.A.T",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/G.O.A.T. - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Clash",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Clash - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Navi Navi Yaari",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Navi Navi Yaari - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Peed",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Peed - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Taare",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Taare - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Track Suit",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Track Suit - Diljit Dosanjh, Nimrat Khaira.m4a",
+        "artistName": "Diljit Dosanjh, Nimrat Khaira"      },
+      {
+        "songName": "Faraar",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Faraar - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Jatti",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Jatti - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Akh Laal Jatt Di",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Akh Laal Jatt Di - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Pyaar",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Pyaar - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Habit",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Habit - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Range",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Range - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Patola",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Patola - Diljit Dosanjh, Kaur B.m4a",
+        "artistName": "Diljit Dosanjh, Kaur B"      },
+      {
+        "songName": "Whiskey",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Whiskey - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Born to Shine",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/bb/Goat_Diljit.jpg",
+        "src": "/music/Born to Shine - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      }
+    ]
+  },
+
+
+
+
+  "No Name": {
+    "albumName": "No Name",
+    "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/b2/No_Name_Sidhu_Moose_Wala.jpg",
+    "artistName": "Sidhu Moose Wala",
+    "artistImg":"https://images.news18.com/ibnlive/uploads/2022/05/sidhu-moose-wala-4.jpg",
+    "songs": [
+      {
+        "songName": "Bloodlust",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/b2/No_Name_Sidhu_Moose_Wala.jpg",
+        "src": "/music/Bloodlust - Sidhu Moose Wala, Mr. Capone-E.m4a",
+        "artistName": "Sidhu Moose Wala"      },
+      {
+        "songName": "0 To 100",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/b2/No_Name_Sidhu_Moose_Wala.jpg",
+        "src": "/music/0 to 100 - Sidhu Moose Wala, Mxrci.m4a",
+        "artistName": "Sidhu Moose Wala"      },
+      {
+        "songName": "Everybody Hurts",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/b2/No_Name_Sidhu_Moose_Wala.jpg",
+        "src": "/music/Everybody Hurts - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"      },
+      {
+        "songName": "Love Sick",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/b2/No_Name_Sidhu_Moose_Wala.jpg",
+        "src": "/music/Love Sick - Sidhu Moose Wala, AR Paisley, Mxrci.m4a",
+        "artistName": "Sidhu Moose Wala"      },
+      {
+        "songName": "Never Fold",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/b/b2/No_Name_Sidhu_Moose_Wala.jpg",
+        "src": "/music/Never Fold - Sidhu Moose Wala, Sunny Malton, SOE.m4a",
+        "artistName": "Sidhu Moose Wala, Sunny Malton"      }
+    ]
+  },
+
+
+
+
+  
+  "Moosetape": {
+    "albumName": "Moosetape",
+    "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+    "artistName": "Sidhu Moose Wala",
+    "artistImg":"https://images.news18.com/ibnlive/uploads/2022/05/sidhu-moose-wala-4.jpg",
+    "songs": [
+      {
+        "songName": "Premium Moosetape (Intro)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Moosetape (Intro) - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Bitch I'm Back",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Bitch I'm Back - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Burberry",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Burberry - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Unfuckwithable",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music",
+        "artistName": "Sidhu Moose Wala, Afsana Khan"
+
+      },
+      {
+        "songName": "Racks and Rounds (feat. Sikander Kahlon)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Racks and Rounds (feat. Sikander Kahlon) - Sidhu Moose Wala, Sikander Kahlon.m4a",
+        "artistName": "Sidhu Moose Wala, Sikander Kahlon"
+
+      },
+      {
+        "songName": "US (feat. Raja Kumari)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/US (feat. Raja Kumari) - Sidhu Moose Wala, Raja Kumari.m4a",
+        "artistName": "Sidhu Moose Wala, Raja Kumari"
+
+      },
+      {
+        "songName": "Moosedrilla (feat. DIVINE)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Moosedrilla (feat. DIVINE) - Sidhu Moose Wala, DIVINE.m4a",
+        "artistName": "Sidhu Moose Wala, DIVINE"
+
+      },
+      {
+        "songName": "Boo Call (Skit)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Boo Call (Skit) - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Brown Shortie (feat. Sonam Bajwa)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Brown Shortie (feat. Sonam Bajwa) - Sidhu Moose Wala, Sonam Bajwa.m4a",
+        "artistName": "Sidhu Moose Wala, Sonam Bajwa"
+
+      },
+      {
+        "songName": "Chacha Huu (Skit)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Chacha Huu (Skit) - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Me and My Girlfriend",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Me and My Girlfriend - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Sidhu Son",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Sidhu Son - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "These Days (feat. Bohemia)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/These Days (feat. Bohemia) - Sidhu Moose Wala, Bohemia.m4a",
+        "artistName": "Sidhu Moose Wala, Bohemia"
+
+      },
+      {
+        "songName": "Ultimatum (Intro)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Ultimatum (Intro) - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Signed to God",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Signed to God - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Regret",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Regret - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Pind Hood Damn Good (RMG Intro)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Pind Hood Damn Good (RMG Intro) - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Malwa Block",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Malwa Block - Sidhu Moose Wala, Wazir Patar.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "B & W",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/B & W - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Invincible (feat. Stefflon Don)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Invincible (feat. Stefflon Don) - Sidhu Moose Wala, Stefflon Don.m4a",
+        "artistName": "Sidhu Moose Wala, Stefflon Don"
+
+      },
+      {
+        "songName": "Aroma",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Aroma - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Amli Talk (Skit)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Amli Talk (Skit) - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "G-Shit (feat. Blockboi Twitch)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/G-Shit (feat. Blockboi Twitch) - Sidhu Moose Wala, Blockboi Twitch.m4a",
+        "artistName": "Sidhu Moose Wala, Blockboi Twitch"
+
+      },
+      {
+        "songName": "Built Different",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Built Different - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Trial Day (Skit)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Trial Day (Skit) - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Calaboose",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Calaboose - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Facts (Skit)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Facts (Skit) - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "295",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/295 - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "IDGAF (feat. Morrisson)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/IDGAF (feat. Morrisson) - Sidhu Moose Wala, Morrisson.m4a",
+        "artistName": "Sidhu Moose Wala, Morrisson"
+
+      },
+      {
+        "songName": "Power",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Power - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Real One (Skit)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Real One (Skit) - Sidhu Moose Wala.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "GOAT",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/GOAT - Sidhu Moose Wala, Wazir Patar.m4a",
+        "artistName": "Sidhu Moose Wala"
+
+      },
+      {
+        "songName": "Celebrity Killer (feat. Tion Wayne)",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/en/c/ca/Moosetape.jpg",
+        "src": "/music/Celebrity Killer (feat. Tion Wayne) - Sidhu Moose Wala, Tion Wayne.m4a",
+        "artistName": "Sidhu Moose Wala, Tion Wayne"
+
+      }
+    ]
+  },
+
+
+
+  "Child Moon Era": {
+    "albumName": "Child Moon Era",
+    "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ef759d4ae310020a06939e99",
+    "artistName": "Diljit Dosanjh",
+    "artistImg":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSicgNFvf2VG_1R9rp85hqzz8dvDkdU5bZj6Q&s",
+    "songs": [
+      {
+        "songName": "Black & White",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ef759d4ae310020a06939e99",
+        "src": "/music/Black & White - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Luna",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ef759d4ae310020a06939e99",
+        "src": "/music/Luna - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Vibe",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ef759d4ae310020a06939e99",
+        "src": "/music/Vibe - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Champagne",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ef759d4ae310020a06939e99",
+        "src": "/music/Champagne - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Cali",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ef759d4ae310020a06939e99",
+        "src": "/music/Cali - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Lover",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ef759d4ae310020a06939e99",
+        "src": "/music/Lover - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Void",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ef759d4ae310020a06939e99",
+        "src": "/music/Void - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Hoops",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ef759d4ae310020a06939e99",
+        "src": "/music/Hoops - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      },
+      {
+        "songName": "Da Crew",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273ef759d4ae310020a06939e99",
+        "src": "/music/Da Crew - Diljit Dosanjh.m4a",
+        "artistName": "Diljit Dosanjh"      }
+    ]
+  },
+
+
+
+
+  "Glory": {
+    "albumName": "Glory",
+    "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+    "artistName": "Yo Yo Honey Singh",
+    "artistImg":"https://yourdost-blog-images.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2016/03/23170222/honey-story_650_043014055557.jpg",
+    "songs": [
+      {
+        "songName": "Millionaire",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Millionaire - Yo Yo Honey Singh.m4a",
+        "artistName": "Yo Yo Honey Singh"
+      },
+      {
+        "songName": "Jatt Mehkma",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Jatt Mehkma - Yo Yo Honey Singh.m4a",
+        "artistName": "Yo Yo Honey Singh"
+      },
+      {
+        "songName": "High On Me",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/High On Me - Yo Yo Honey Singh, Talwiinder.m4a",
+        "artistName": "Yo Yo Honey Singh, Talwiinder"
+      },
+      {
+        "songName": "Fuck Them",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Fuck Them - Yo Yo Honey Singh, Leo Grewal.m4a",
+        "artistName": "Yo Yo Honey Singh, Leo Grewal"
+      },
+      {
+        "songName": "Bonita",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Bonita - Yo Yo Honey Singh, THE SHAMS.m4a",
+        "artistName": "Yo Yo Honey Singh, THE SHAMS"
+      },
+      {
+        "songName": "Hide It",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Hide It - Yo Yo Honey Singh.m4a",
+        "artistName": "Yo Yo Honey Singh"
+      },
+      {
+        "songName": "Malamaal",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Malamaal - Yo Yo Honey Singh, Yina Menez.m4a",
+        "artistName": "Yo Yo Honey Singh, Yina Menez"
+      },
+      {
+        "songName": "Rounds N Ring",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Rounds N Ring - Yo Yo Honey Singh, Navaan Sandhu, Bonafide.m4a",
+        "artistName": "Yo Yo Honey Singh, Navaan Sandhu, Bonafide"
+      },
+      {
+        "songName": "Lapata",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Lapata - Yo Yo Honey Singh, pho.m4a",
+        "artistName": "Yo Yo Honey Singh, pho"
+      },
+      {
+        "songName": "Payal (Feat. Nora Fatehi)",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Payal (Feat. Nora Fatehi) - Yo Yo Honey Singh, Paradox.m4a",
+        "artistName": "Yo Yo Honey Singh, Paradox"
+      },
+      {
+        "songName": "Caliente",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Caliente - Yo Yo Honey Singh.m4a",
+        "artistName": "Yo Yo Honey Singh"
+      },
+      {
+        "songName": "6 Am",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/6 Am - Yo Yo Honey Singh.m4a",
+        "artistName": "Yo Yo Honey Singh"
+      },
+      {
+        "songName": "Majnoonh",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Majnoonh - Yo Yo Honey Singh, Jamila.m4a",
+        "artistName": "Yo Yo Honey Singh, Jarmila"
+      },
+      {
+        "songName": "Sheeshe Wali Chunni",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Sheeshe Wali Chunni - Yo Yo Honey Singh, Girik Aman.m4a",
+        "artistName": "Yo Yo Honey Singh, Girik Aman"
+      },
+      {
+        "songName": "Shamaan De Vele",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Shamaan De Vele - Yo Yo Honey Singh, Leo Grewal.m4a",
+        "artistName": "Yo Yo Honey Singh, Leo Grewal"
+      },
+      {
+        "songName": "Beeba",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Beeba - Yo Yo Honey Singh, Laïoung, Wahab Bugti.m4a",
+        "artistName": "Yo Yo Honey Singh, Laïoung, Wahab Bugti"
+      },
+      {
+        "songName": "Chhori",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Chhori - Yo Yo Honey Singh, Paradox.m4a",
+        "artistName": "Yo Yo Honey Singh, Paradox"
+      },
+      {
+        "songName": "Rap God",
+        "imgSrc": "https://i.scdn.co/image/ab67616d0000b273aad3f4b601ae8763b3fc4e88",
+        "src": "/music/Rap God - Yo Yo Honey Singh, Handles Tdnb, Marvi-Sahiban.m4a",
+        "artistName": "Yo Yo Honey Singh, Handles Tdnb, Marvi-Sahiban"
+      }
+    ]
+  }
+}

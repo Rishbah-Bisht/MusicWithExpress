@@ -1,0 +1,126 @@
+#info-about-song{
+    position: relative;
+    top: 50px;
+    background-position: center;
+}
+.head{
+    background-position: center;
+    box-shadow: 2px 2px 10px  ;
+    margin: 0;
+}
+#goBackButton{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    bottom: 50px;
+    right: 185px;
+    font-size: 20px;
+}
+.album{
+    padding: 0;
+    margin: 10px
+}
+.sing-song h3{
+    width: 100%;
+color: white;
+text-align: left;
+margin: 10px;
+margin-top: 20px;
+}
+.album img{
+    width: 40px;
+    margin: 0px;
+ 
+
+  }
+.highlight{
+    display: flex;
+    color: white;
+    width: 100%;
+}
+.highlight-image{
+    margin: 10px;
+    width: 70px;
+}
+.highlight-title{
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: transparent;
+    margin: 20px 0 10px 0;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.highlight-artist{
+    font-size: 16px;
+    background-color: rgba(255, 0, 0, 0);
+  
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.515);
+    white-space: nowrap;
+    /* Prevent text from wrapping to the next line */
+    overflow: hidden;
+    /* Hide any text that overflows the container */
+    text-overflow: ellipsis;
+}
+.section{
+    width: 100%;
+}
+.album-cover{
+    width: 90px;
+    margin-bottom: 10px;
+}
+.other-album{
+    min-width: 100px;
+    max-width: 100px;
+display: flex;
+flex-wrap: wrap;    
+justify-content: left;
+padding-left: 10px;
+color: #ffffff;
+margin: 20px 0;
+}
+.album-title{
+    width: 95%;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.album-artist{
+    width: 95%;
+    font-size: 16px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.515);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#songNew{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    margin-top: 10px;
+    align-items: center;
+}
+.section-title{
+    margin-top: 30px;
+    color: #ffffff;
+    width: 100%;
+    font-size: 19px;
+    margin-left:10px ;
+    font-weight: 550
+}
+.album-divs{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.album-divs a{
+    text-decoration: none;
+}
