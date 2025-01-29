@@ -39,8 +39,8 @@ a{
 
 }
 .singrImgSrC{
-  width: 60px;
-  max-height: 60px;
+  width: 50px;
+  max-height: 50px;
   border-radius: 50%;
   margin:10px  15px 0 0;
 }
@@ -968,7 +968,7 @@ border-radius: 5px;
 /* ?................................................................................ */
 .que-info {
   background-color: #333;
-  width: 90%;
+  width: 100%;
   height: 70px;
   border-radius: 10px;
   display: flex;
@@ -983,7 +983,11 @@ border-radius: 5px;
 #nextSongContainer {
   max-width: 90%;
 }
-
+.srch{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
 #songImgDesplay_q {
   width: 60px;
   background-color: rgba(107, 93, 68, 0);
@@ -1215,7 +1219,7 @@ border-radius: 5px;
 }
 
 #navMiddelPart h2 {
-  margin: 10px 15px 20px;
+  margin-left: 20px;
 }
 
 #allinputAndBTns {
@@ -1255,7 +1259,7 @@ border-radius: 5px;
 
 #backbtn {
   padding: 12px;
-  margin-top: 10px;
+  margin-top: 0px;
   background-color: rgb(0, 0, 0);
   color: white;
   font-size: 20px;
