@@ -30,12 +30,13 @@
     left: 0;
 }
 .album-img{
+    margin: 0;
     border-radius:10px ;
 }
 
 .singerPic {
-    margin: 25px 0;
-    width: 85%;
+    margin: 0px 0;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: start;
