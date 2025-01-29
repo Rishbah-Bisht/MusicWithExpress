@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry, Not Found</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(178deg, #434343, #000000, #141414);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        /* Container for the content */
+        .container {
+            text-align: center;
+            background: rgb(71 71 71 / 90%);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Sad face emoji */
+        .sad-face {
+            
+            font-size: 100px;
+            background-image: url("/picture/shinshan-removebg-preview.png");
+            animation: bounce 2s infinite;
+        }
+        .sad-face img{
+            height: 160px;
+            mix-blend-mode:screen;
+        }
+        /* Text styling */
+        .text {
+            font-size: 40px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 20px 0;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .message {
+            font-size: 20px;
+            line-height: 30px;
+            color: #acacac;
+            margin-bottom: 30px;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        /* Button styling */
+        .home-button {
+            background: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .home-button:hover {
+            background: #212121;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">Sorry!</div>
+        <div class="sad-face"><img src="/picture/error-pic-removebg-preview.png"/></div>
+        <div class="message">The singer, album, or song you're looking for is not present in our database.</div>
+        <button id="goBackButton" class="go-back-button home-button">Go Back Home</button>
+    
+     
+    </div>
+    <script>
+
+document.getElementById('goBackButton').addEventListener('click', function () {
+    window.history.back(); // Navigate to the previous page
+});
+    </script>
+</body>
+</html>

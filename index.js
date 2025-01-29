@@ -36,6 +36,11 @@ app.get("/", (req, res) => {
     });
 });
 
+
+function getValueBeforeComma(str) {
+    if (!str) return ''; // Handle undefined or null values
+    return str.includes(",") ? str.split(",")[0].trim() : str.trim();
+}
 // Song details route
 app.get('/song', (req, res) => {
     const songname = req.query.songname;
@@ -58,13 +63,13 @@ app.get('/song', (req, res) => {
 
             // Search logic
             if (songsData[songname]) {
-                return res.render('song', { key: songname, data: songsData[songname] });
+                return res.render('song', { key: songname, data: songsData[songname],getValueBeforeComma });
             } else if (albumData[songname]) {
-                return res.render('song', { key: songname, data: albumData[songname] });
+                return res.render('song', { key: songname, data: albumData[songname],getValueBeforeComma });
             } else if (singerData[songname]) {
-                return res.render('singer', { key: songname, data: singerData[songname] });
+                return res.render('singer', { key: songname, data: singerData[songname],getValueBeforeComma });
             } else {
-                return res.send('No such song, album, or singer found.');
+                return res.render('error');
             }
         })
         .catch(err => {
@@ -98,6 +103,7 @@ app.get('/data', (req, res) => {
         res.json(JSON.parse(data));
     });
 });
+
 
 // Route to serve all songs, albums, and singers
 app.get('/songs', (req, res) => {

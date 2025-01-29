@@ -12,7 +12,7 @@ a{
 
 .leftSide {
   height: 100vh;
-  padding: 0 12px;
+  padding: 0px;
   background-color: #48464654;
   display: flex;
   justify-content: center;
@@ -46,7 +46,7 @@ a{
   background-color: transparent;
   width: 100%;
   text-align: left;
-  line-height: 24px;
+  line-height: 28px;
   margin-bottom: 10px;
 }
 
@@ -95,23 +95,24 @@ a{
 
 #leftSideDivePosition {
   background-color: transparent;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
-  padding: 0px 10px;
-  margin: 20px 0px 0 0;
+  padding: 0px;
+  margin: 25px auto;
+  align-items: center;
 }
 
 #leftSideDivePosition .allHead {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   white-space: nowrap;
   /* Prevent text from wrapping to the next line */
   overflow: hidden;
   /* Hide any text that overflows the container */
   text-overflow: ellipsis;
-  width: 280px;
-  margin-bottom: 20px;
+  
+
 
 }
 
@@ -316,7 +317,9 @@ body {
   position: relative;
   overflow-y: hidden;
 }
-
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
 .container_ {
   width: 99%;
   position: relative;
@@ -688,7 +691,7 @@ border-radius: 5px;
 .control-btn {
   width: 70px;
   height: 70px;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.514), transparent);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.514), #ffffff3d);
 
   border: none;
   font-size: 2rem;
@@ -723,7 +726,7 @@ border-radius: 5px;
 
 
 #progress-bar {
-  width: 380px;
+  width: 100%;
   -webkit-appearance: none;
   height: 3px;
   border-radius: 10px;
@@ -739,13 +742,12 @@ border-radius: 5px;
 
 #progress-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: .3rem;
-  height: .3rem;
+  width: .5rem;
+  height: .5rem;
   opacity: 1;
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 0 0 5px #ccc2c396
 }
 
 #progress-bar::-webkit-slider-thumb:hover {
@@ -778,7 +780,7 @@ border-radius: 5px;
 
 .volume-control {
   background-color: transparent;
-  width: 100%;
+  width: 90%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -962,7 +964,7 @@ border-radius: 5px;
 /* ?................................................................................ */
 .que-info {
   background-color: #333;
-  width: 100%;
+  width: 90%;
   height: 70px;
   border-radius: 10px;
   display: flex;
@@ -975,7 +977,7 @@ border-radius: 5px;
 }
 
 #nextSongContainer {
-  width: 90%;
+  max-width: 90%;
 }
 
 #songImgDesplay_q {

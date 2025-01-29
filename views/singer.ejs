@@ -93,12 +93,15 @@
                     <div class="sing-song">
 
 
-                        <div class="head" src="<%= value.imgSrc %>">
-                            <div class="go-back-container">
-                                <button id="goBackButton" class="go-back-button"><i
-                                        class="fa-solid fa-arrow-right fa-rotate-180"></i></button>
-                            </div>
 
+                        <div class="head">
+                            <div class="singerPic">
+                                <div class="go-back-container">
+                                    <button id="goBackButton" class="go-back-button"><i
+                                            class="fa-solid fa-arrow-right fa-rotate-180"></i></button>
+                                </div>
+                                <img class="album-img" src="<%= value.imgSrc %>">
+                            </div>
                             <div id="info-about-song">
                                 <a class="albumName" href="/song/?songname=<%= value.singerName %>">
                                     <%= value.singerName %>
@@ -111,6 +114,9 @@
                                 </div>
                             </div>
                         </div>
+
+
+
 
                         <h3>Top Songs</h3>
                         <% for(let song of value.Topsongs) {%>
@@ -231,9 +237,12 @@
                                 <div class="CreaditDiv">
                                     <h1 id="leader">Devloped by </h1>
                                     <div class="CreaditDiv">
-                                        <a href="https://www.instagram.com/amanrana6425/"  target="_blank" class="auto_type">Aman</a>
-                                        <a href="https://www.instagram.com/chamoli.sudhanshu/"  target="_blank" class="auto_type">Sudhanshu</a>
-                                        <a href="https://www.instagram.com/ri__shukie/"  target="_blank" class="auto_type">Rishabh</a>
+                                        <a href="https://www.instagram.com/amanrana6425/" target="_blank"
+                                            class="auto_type">Aman</a>
+                                        <a href="https://www.instagram.com/chamoli.sudhanshu/" target="_blank"
+                                            class="auto_type">Sudhanshu</a>
+                                        <a href="https://www.instagram.com/ri__shukie/" target="_blank"
+                                            class="auto_type">Rishabh</a>
                                     </div>
                                 </div>
                             </div>
@@ -251,8 +260,8 @@
         <div class="leftSide">
 
             <div id="leftSideDivePosition">
-                <div class="allHead" id="headr_name"></div><button class="crossbtn"><i
-                        class="fa-solid fa-xmark"></i></button>
+                <button class="crossbtn"><i class="fa-solid fa-chevron-right fa-rotate-90"></i></button>
+                <div class="allHead" id="headr_name"></div>
             </div>
             <img src="/black screen.png" id="leftside">
             <div id="left-SongInfo">
@@ -264,9 +273,10 @@
             <div id="footerPart">
                 <div class="controls">
                     <div class="progress-container">
-                        
+
                         <input type="range" id="progress-bar" class="progress-bar" value="0">
-                       <div class="showDuration"><span id="current-time">0:00</span> <span id="duration">0:00</span></div>
+                        <div class="showDuration"><span id="current-time">0:00</span> <span id="duration">0:00</span>
+                        </div>
                     </div>
                     <div id="btnsCntrol">
                         <button id="prev" class="control-btn"><i
@@ -341,7 +351,8 @@
     </script>
     <script src="/singer.js">
     </script>
-
+    <script src="/bagcolor.js">
+    </script>
 </body>
 
 </html>

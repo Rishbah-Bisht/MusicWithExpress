@@ -89,16 +89,24 @@
 
                         <% if (Array.isArray(value.songs)) { %> 
                             <div class="head">
+                                <div class="singerPic">
                                 <div class="go-back-container">
                                     <button id="goBackButton" class="go-back-button"><i class="fa-solid fa-arrow-right fa-rotate-180"></i></button>
                                   </div>
                                     <img class="album-img" src="<%= value.imgSrc %>">
-
+                                </div>
                                     <div id="info-about-song">
                                         <div class="albumName"><%= value.albumName %></div>
                                         <div class="singerInfo">
                                         <img src="<%= value.artistImg %>" id="singerimg"/>
-                                        <a class="artistNAME" href="/song/?songname=<%= value.artistName %>"><%= value.artistName %></a>
+                                        
+                                     
+                                        <a class="artistNAME" href="/song/?songname=<%= encodeURIComponent(getValueBeforeComma(value.artistName)) %>">
+                                            <%= value.artistName %>
+                                        </a>
+                                        
+                                        
+                                        
                                     </div>
                                     </div>
                                 </div>
@@ -119,10 +127,12 @@
                             <% }) %>
                         <% } else if (value && typeof value === 'object') { %>
                             <div class="head">
+                                <div class="singerPic">
                                 <div class="go-back-container">
                                     <button id="goBackButton" class="go-back-button"><i class="fa-solid fa-arrow-right fa-rotate-180"></i></button>
                                   </div>
                                 <img class="album-img" src="<%= value.imageLink %>">
+                                </div>
                                 <div id="info-about-song">
                                     <div class="albumName" ><%= value.name %></div>
                                     <a class="artistNAME" href="/song/?songname=<%= value.artistName %>"><%= value.artistName %></a>
