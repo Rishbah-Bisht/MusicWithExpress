@@ -33,7 +33,7 @@ document.getElementById('searchBox').addEventListener('input', async function (e
 
     if (inputValue) {
         try {
-            const response = await fetch('http://localhost:3000/songs'); // Fetch data from backend
+            const response = await fetch('https://musicwith-express.onrender.com/songs'); // Fetch data from backend
             const data = await response.json();
             if(data.singer){
                 const singers =data.singer
