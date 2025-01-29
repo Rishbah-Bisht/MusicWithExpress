@@ -28,6 +28,7 @@
   justify-content: center;
   border-radius: 0px;
   flex-wrap: wrap;
+  margin-top:0 ;
 }
 
 .album-img {
