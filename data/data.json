@@ -1,7 +1,7 @@
 {
     "TopArtists": {
         "1": {
-            "name": "Karan Aulja",
+            "name": "Karan Aujla",
             "profession": "Artist",
             "img": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84117e365f4b9f06d6a25f5955",
             "src": "/song/?songname="
@@ -29,7 +29,7 @@
         },
         "2": {
             "name": "Wavy",
-            "artist": "Karan Aulja, Mrxci",
+            "artist": "Karan Aujla, Mrxci",
             "img": "https://i.scdn.co/image/ab67616d00001e02e34f05599c4a42e1cbb1c251",
             "src": "/music/WAVY.mp3"
         },
@@ -98,7 +98,7 @@
         },
         "3": {
             "name": "Making Memories",
-            "artist": "Karan Aulja",
+            "artist": "Karan Aujla",
             "img": "https://c.saavncdn.com/740/Admirin-You-feat-Preston-Pablo-Punjabi-2023-20230730053753-500x500.jpg",
             "src": "/song/?songname="
         },
