@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 
 // Use the port provided by Render or default to 3000 for local development
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3200;
 
 app.listen(port, () => {
     console.log(`Server is running at port ${port}`);
