@@ -20,66 +20,49 @@
         <div class="recently-played">
             <div class="section-title">Recently played</div>
             <div class="cards-container">
-                <div class="card">
-                    <div class="card-img"></div>
-                    <div class="play-icon"><i class="fas fa-play"></i></div>
-                    <div class="card-title">Daily Mix 1</div>
-                    <div class="card-desc">Made for you</div>
-                </div>
-                <div class="card">
-                    <div class="card-img"></div>
-                    <div class="play-icon"><i class="fas fa-play"></i></div>
-                    <div class="card-title">Discover Weekly</div>
-                    <div class="card-desc">Your weekly mixtape</div>
-                </div>
-                <div class="card">
-                    <div class="card-img"></div>
-                    <div class="play-icon"><i class="fas fa-play"></i></div>
-                    <div class="card-title">Top Hits 2023</div>
-                    <div class="card-desc">By Musicfy</div>
-                </div>
-                <div class="card">
-                    <div class="card-img"></div>
-                    <div class="play-icon"><i class="fas fa-play"></i></div>
-                    <div class="card-title">Chill Lofi</div>
-                    <div class="card-desc">Relaxing beats</div>
-                </div>
-                <div class="card">
-                    <div class="card-img"></div>
-                    <div class="play-icon"><i class="fas fa-play"></i></div>
-                    <div class="card-title">Workout Energy</div>
-                    <div class="card-desc">Pump up your workout</div>
-                </div>
+                
+                <% instaData.TopArtists.forEach(element => { %>
+                    <a href="<%= element.src %>" class="card">
+                      <img src="<%= element.img %>" class="card-img" />
+                      <span  class="play-icon">
+                        <i class="fas fa-play"></i>
+                      </span>
+                      <div class="card-title"><%= element.name %></div>
+                      <div class="card-desc"><%= element.profession %></div>
+                    </a>
+                  <% }); %>
             </div>
         </div>
         
         <div class="made-for-you">
             <div class="section-title">Made for You</div>
             <div class="cards-container">
-                <div class="card">
-                    <div class="card-img"></div>
-                    <div class="play-icon"><i class="fas fa-play"></i></div>
-                    <div class="card-title">Your Top Mix</div>
-                    <div class="card-desc">Based on your listening</div>
-                </div>
-                <div class="card">
-                    <div class="card-img"></div>
-                    <div class="play-icon"><i class="fas fa-play"></i></div>
-                    <div class="card-title">New Releases</div>
-                    <div class="card-desc">Fresh tracks you'll love</div>
-                </div>
-                <div class="card">
-                    <div class="card-img"></div>
-                    <div class="play-icon"><i class="fas fa-play"></i></div>
-                    <div class="card-title">Throwback Hits</div>
-                    <div class="card-desc">Relive the classics</div>
-                </div>
-                <div class="card">
-                    <div class="card-img"></div>
-                    <div class="play-icon"><i class="fas fa-play"></i></div>
-                    <div class="card-title">Indie Discoveries</div>
-                    <div class="card-desc">Hidden gems you'll love</div>
-                </div>
+                <% instaData.JumpBackIn.forEach(element => { %>
+                    <div data-src='<%= element.src %>' class="card">
+                        <img src="<%= element.img %>" class="card-img" />
+                        <span  class="play-icon">
+                          <i class="fas fa-play"></i>
+                        </span>
+                        <div class="card-title"><%= element.name %></div>
+                        <div class="card-desc"><%= element.artist %></div>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+        
+        <div class="made-for-you">
+            <div class="section-title">Made for You</div>
+            <div class="cards-container">
+                <% instaData.TopAlbums.forEach(element => { %>
+                    <a href="<%= element.src %>" class="card">
+                        <img src="<%= element.img %>" class="card-img" />
+                        <span  class="play-icon">
+                          <i class="fas fa-play"></i>
+                        </span>
+                        <div class="card-title"><%= element.name %></div>
+                        <div class="card-desc"><%= element.artist %></div>
+                      </a>
+                <% }); %>
             </div>
         </div>
     </div>
@@ -90,4 +73,5 @@
     <%- include('./partials/Right_side') %>
 </body>
 <script src="rezier.js"></script>
+<script src="app.js"></script>
 </html>

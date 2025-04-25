@@ -23,3 +23,11 @@
         document.body.style.cursor = 'default';
     });
 
+    // document.addEventListener('DOMContentLoaded', () => {
+    //     document.body.style.userSelect = 'none';
+    //     document.body.addEventListener('copy', e => e.preventDefault());
+    //     document.body.addEventListener('cut', e => e.preventDefault());
+    //     document.body.addEventListener('contextmenu', e => e.preventDefault());
+    //     document.body.addEventListener('dragstart', e => e.preventDefault());
+    //     document.body.addEventListener('selectstart', e => e.preventDefault());
+    //   });

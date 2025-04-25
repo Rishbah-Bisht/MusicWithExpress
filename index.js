@@ -32,7 +32,17 @@ app.get("/", (req, res) => {
             return res.status(500).send('Error reading data file.');
         }
         const instaData = JSON.parse(data);
-        res.render('home', { instaData });
+
+        const homeData = {
+            TopArtists: Object.values(instaData.TopArtists),
+            JumpBackIn: Object.values(instaData.JumpBackIn),
+            TopAlbums: Object.values(instaData.TopAlbums)
+          };
+          
+          res.render("home", {
+            instaData: homeData
+          });
+          
     });
 });
 
