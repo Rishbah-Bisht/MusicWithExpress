@@ -6,6 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const songTitle = document.querySelector(".song-title");
     const artistName = document.querySelector(".artist-name");
     const playBtn = document.querySelector(".play-btn i");
+    const ShowPlay = document.querySelector(".play-icon i");
 
     const progress = document.querySelector(".progress");
     const handle = document.querySelector(".progress-handle");
@@ -13,6 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const durationTimeEl = document.querySelectorAll(".time span")[1];
 
     let isPlaying = false;
+    let currentCard = null;  // To store reference to the currently playing card
 
     function formatTime(time) {
       const minutes = Math.floor(time / 60);
@@ -22,6 +24,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Update UI when song plays
     function updateSidebarUI(card) {
+      // Remove 'playing' class from the previous card (if any)
+      if (currentCard) {
+        currentCard.classList.remove("playing");
+      }
+
+      // Add 'playing' class to the clicked card
+      card.classList.add("playing");
+      currentCard = card;  // Update reference to the current card
+
       const src = card.getAttribute("data-src");
       const img = card.querySelector(".card-img").src;
       const title = card.querySelector(".card-title").textContent;
@@ -31,7 +42,7 @@ window.addEventListener("DOMContentLoaded", () => {
       audio.play();
       isPlaying = true;
 
-      nowPlayingImg.src= img;
+      nowPlayingImg.src = img;
       songTitle.textContent = title;
       artistName.textContent = artist;
       playBtn.classList.remove("fa-play");
