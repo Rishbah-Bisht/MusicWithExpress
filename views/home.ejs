@@ -1,75 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music App with Custom Theme</title>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
     <!-- Left Sidebar -->
-    <%- include('./partials/slide_bar') %>
-    
-    <!-- Main Content -->
-    <div class="main-content">
-        <div class="greeting">Good evening</div>
-        
-        <div class="recently-played">
-            <div class="section-title">Recently played</div>
-            <div class="cards-container">
-                
-                <% instaData.TopArtists.forEach(element => { %>
-                    <a href="<%= element.src %>" class="card">
-                      <img src="<%= element.img %>" class="card-img" />
-                      <span  class="play-icon">
-                        <i class="fas fa-play"></i>
-                      </span>
-                      <div class="card-title"><%= element.name %></div>
-                      <div class="card-desc"><%= element.profession %></div>
-                    </a>
-                  <% }); %>
-            </div>
-        </div>
-        
-        <div class="made-for-you">
-            <div class="section-title">Made for You</div>
-            <div class="cards-container2">
-                <% instaData.JumpBackIn.forEach(element => { %>
-                    <div data-src='<%= element.src %>' class="card Music">
-                        <img src="<%= element.img %>" class="card-img" />
-                       
-                        <div class="card-title"><%= element.name %></div>
-                        <div class="card-desc"><%= element.artist %></div>
+    <%- include('../partials/slide_bar') %>
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+                    <div class="greeting">Good evening</div>
+
+                    <div class="recently-played">
+                        <div class="section-title">Recently played</div>
+                        <div class="cards-container">
+
+
+                        </div>
                     </div>
-                <% }); %>
-            </div>
-        </div>
-        
-        <div class="made-for-you">
-            <div class="section-title">Made for You</div>
-            <div class="cards-container">
-                <% instaData.TopAlbums.forEach(element => { %>
-                    <a href="<%= element.src %>" class="card">
-                        <img src="<%= element.img %>" class="card-img" />
-                        <span  class="play-icon">
-                          <i class="fas fa-play"></i>
-                        </span>
-                        <div class="card-title"><%= element.name %></div>
-                        <div class="card-desc"><%= element.artist %></div>
-                      </a>
-                <% }); %>
-            </div>
-        </div>
-    </div>
 
-    <div id="resizer"></div>
+                    <div class="made-for-you">
+                        <div class="section-title">Made for You</div>
+                        <div class="cards-container2">
 
-    <!-- Right Sidebar -->
-    <%- include('./partials/Right_side') %>
+                        </div>
+                    </div>
+
+                    <div class="made-for-you">
+                        <div class="section-title">Made for You</div>
+                        <div class="cards-container">
+
+                        </div>
+                    </div>
+        </div>
+
+        <div id="resizer"></div>
+
+        <!-- Right Sidebar -->
+        <%- include('../partials/Right_side') %>
 </body>
 <script src="rezier.js"></script>
 <script src="app.js"></script>
+
 </html>

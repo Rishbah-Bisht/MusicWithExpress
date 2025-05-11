@@ -63,7 +63,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-
+    setTimeout(() => {
+        const message = document.getElementById('successMessage');
+        if (message) {
+            message.style.opacity = '0';
+            setTimeout(() => message.style.display = 'none', 500);
+        }
+    }, 5000);
 
 
 

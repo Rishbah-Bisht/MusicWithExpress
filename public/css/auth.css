@@ -125,12 +125,52 @@ button {
     transition: all 0.3s;
     margin-top: 10px;
 }
-
+ button:disabled {
+         background: linear-gradient(to right, var(--accent-color), var(--accent-hover));
+        color: #666;
+        cursor: not-allowed;
+    }
 button:hover {
     box-shadow: var(--glow);
     transform: translateY(-2px);
 }
+ #music_professions {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        background-color: var(--input-bg);
+        color: var(--text-color);
+        transition: border-color 0.3s ease;
+    }
 
+    /* Add a hover effect to the select dropdown */
+    #music_professions:hover {
+        border-color: var(--accent-color);
+    }
+
+    /* Add focus effect */
+    #music_professions:focus {
+        border-color: var(--accent-color);
+        outline: none;
+        box-shadow: var(--glow);
+    }
+.alert-danger{
+    color: #d72020;
+    margin-bottom: 10px;
+}
+    /* Styling the options */
+    #music_professions option {
+        background-color: var(--input-bg);
+        color: var(--text-color);
+        padding: 10px;
+    }
+
+    /* Add hover effect on option */
+    #music_professions option:hover {
+        background-color: var(--accent-hover);
+    }
 .forgot-password {
     text-align: center;
     margin-top: 20px;
@@ -356,4 +396,8 @@ button:hover {
         width: 120px;
         height: 120px;
     }
+}
+#password-match-msg{
+    font-size: .9rem;
+    margin-bottom: 10px;
 }
