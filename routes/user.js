@@ -4,7 +4,7 @@ const multer = require('multer');
 const router = express.Router();
 const user = require("../models/users");
 const crypto = require("crypto");
-
+const Album_data = require('../models/album')
 
 
 
@@ -68,7 +68,9 @@ router.get('/Musicfy/profile', ensureLoggedIn, async (req, res) => {
 // Render home page (empty for now)
 router.get('/Musicfy/Home', ensureLoggedIn, async (req, res) => {
     try {
-        res.render("home");
+
+        const albums = await Album_data.find();
+        res.render("home",{albums});
     } catch (err) {
         console.error(err);
         res.status(500).send('Error loading home data.');
@@ -78,10 +80,27 @@ router.get('/Musicfy/Home', ensureLoggedIn, async (req, res) => {
 
 
 
+router.get('/Musicfy/Uploads-Music', ensureLoggedIn, async (req, res) => {
+    try {
+        res.render("uploadAlbum");
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Error loading home data.');
+    }
+});
+
+router.get('/Musicfy/create-playlist', (req, res) => {
+    res.render('Create_playlist')
+})
+
+router.get('/Musicfy/create-playlist/Add-Album', (req, res) => {
+    res.render('uploadAlbum')
+})
+
 // Update user info (name, bio, profile image)
 router.post('/Update-user-info', ensureLoggedIn, upload.single('p_img'), async (req, res) => {
     const updates = {
-        name: Array.isArray(req.body.name) ? req.body.name[0] : req.body.name,
+        name: req.body.nickname,
         bio: req.body.bio
     };
 
@@ -106,6 +125,69 @@ router.post('/Update-user-info', ensureLoggedIn, upload.single('p_img'), async (
         res.status(500).send('Server error while updating user');
     }
 });
+
+
+
+
+
+
+
+router.get('/Musicfy/Album/:albumname', ensureLoggedIn, async (req, res) => {
+    try {
+        const albumName = req.params.albumname;
+
+        const album = await Album_data.findOne({ title: albumName });
+
+        if (!album) {
+            return res.status(404).send('Album not found.');
+        }
+
+        res.render("album", { album });
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Error loading album data.');
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 module.exports = router;

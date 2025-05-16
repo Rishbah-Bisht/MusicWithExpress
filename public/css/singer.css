@@ -26,9 +26,10 @@
     bottom: 0;
     left: 0;
 }
-.album-img{
+
+.album-img {
     margin: 0;
-    border-radius:10px ;
+    border-radius: 10px;
 }
 
 .singerPic {
@@ -139,4 +140,136 @@
 
 .album-divs a {
     text-decoration: none;
+}
+
+.header {
+    display: flex;
+    padding: 10px 20px;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.album-cover {
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.album-info {
+    flex: 1;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+.album-meta {
+    color: rgba(224, 224, 224, 0.8);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 2rem 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+}
+
+.track-list {
+    display: grid;
+
+    gap: 5px;
+}
+
+.Music {
+    justify-content: left;
+}
+
+.album-info h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.track {
+    background-color: var(--card-color);
+    padding: 1.2rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.track:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--glow);
+}
+
+.track-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 1.2rem;
+    color: var(--accent-color);
+    min-width: 30px;
+}
+
+.track-info {
+    flex: 1;
+}
+
+.track-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.track-artist {
+    color: rgba(224, 224, 224, 0.7);
+    font-size: 0.9rem;
+}
+
+.track-duration {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.duration-checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.duration-time {
+    font-size: 0.9rem;
+    color: rgba(224, 224, 224, 0.7);
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .album-cover {
+        width: 200px;
+        height: 200px;
+    }
+
+    .track-list {
+        grid-template-columns: 1fr;
+    }
 }

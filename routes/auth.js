@@ -149,7 +149,6 @@ router.post('/Musicfy/login/post', async (req, res) => {
     console.log(Registration_email)
     try {
         const user_data = await user.findOne({ email: Registration_email });
- console.log(user_data)
         if (!user_data) {
             req.flash('error_msg', 'No account found. Please sign up first.');
             return res.redirect('/Musicfy/login');

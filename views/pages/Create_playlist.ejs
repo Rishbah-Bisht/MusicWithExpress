@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App with Custom Theme</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- Left Sidebar -->
+      <%- include('../partials/slide_bar', { page: 'create' }) %>
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+
+
+            <div id="create-playlist">
+                <a href="/Musicfy/create-playlist/Add-Album" class="btn-accent">
+                   <i class="fa-solid fa-compact-disc"></i> Add Album
+                </a>
+
+
+                <a href="#" class="btn-outline">
+                    <i class="fa-solid fa-music"></i> Add Single
+                </a>
+            </div>
+        </div>
+
+</body>
+
+</html>

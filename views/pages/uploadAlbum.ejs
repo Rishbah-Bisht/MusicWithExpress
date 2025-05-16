@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Upload Portal</title>
+    <link rel="stylesheet" href="/uploads.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <%- include('../partials/slide_bar', { page: 'create' }) %>
+
+
+ <div class="main-content">
+  
+  <form action="/upload-album" method="POST" enctype="multipart/form-data">
+    <h1>Upload Album</h1>
+    <div>
+      <label>Album Title:</label>
+      <input type="text" name="title" required>
+    <div>
+      <label>Artist:</label>
+      <input type="text" name="Artist" required>
+    </div>
+    <div>
+      <label>Description:</label>
+      <textarea name="description" required></textarea>
+    </div>
+    <div>
+      <label>Cover Image:</label>
+      <input type="file" name="coverImage" accept="image/*" required>
+    </div>
+
+    <h3>Songs:</h3>
+    <div id="songsContainer">
+      <div class="song-block">
+        <label>Name:</label>
+        <input type="text" name="songNames" required>
+        <label>Artist:</label>
+        <input type="text" name="artists" required>
+        <label>Audio File:</label>
+        <input type="file" name="songs" accept="audio/*" required>
+      </div>
+    </div>
+
+    <button type="button" onclick="addSong()">+ Add More Song</button>
+    <br><br>
+    <button type="submit">Upload Album</button>
+  </form>
+</div>
+<script>
+    function addSong() {
+      const container = document.getElementById('songsContainer');
+      const div = document.createElement('div');
+      div.className = 'song-block';
+      div.innerHTML = `
+        <label>Name:</label>
+        <input type="text" name="songNames" required>
+        <label>Artist:</label>
+        <input type="text" name="artists" required>
+    
+        <label>Audio File:</label>
+        <input type="file" name="songs" accept="audio/*" required>
+      `;
+      container.appendChild(div);
+    }
+  </script>
+
+  
+</body>
+</html>

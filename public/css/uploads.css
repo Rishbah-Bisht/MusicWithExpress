@@ -1,0 +1,166 @@
+     :root {
+            --bg-color: #0f0f0f;
+            --card-color: #1a1a1a;
+            --text-color: #e0e0e0;
+            --accent-color: #7637db;
+            --accent-hover: #9d50bb;
+            --input-bg: #1e1d1d;
+            --border-color: #d1d1d1;
+            --glow: 0 0 15px rgba(110, 72, 170, 0.7);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h3 {
+            margin: 1.5rem 0 1rem;
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        form {
+            background-color: var(--card-color);
+            padding: 2rem;
+            border-radius: 1px;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+           
+        }
+
+        div {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        input[type="file"] {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: var(--input-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            color: var(--text-color);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 2px rgba(118, 55, 219, 0.3);
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .song-block {
+            background-color: var(--input-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .song-block label {
+            margin-top: 0.75rem;
+        }
+
+        .song-block label:first-child {
+            margin-top: 0;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            margin-top: 1rem;
+            padding: 1rem;
+            font-size: 1.1rem;
+        }
+
+        button[type="button"] {
+            background-color: transparent;
+            border: 1px solid var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        button[type="button"]:hover {
+            background-color: rgba(118, 55, 219, 0.1);
+        }
+
+        input[type="file"] {
+            padding: 0.5rem;
+        }
+
+        input[type="file"]::file-selector-button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input[type="file"]::file-selector-button:hover {
+            background-color: var(--accent-hover);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            form {
+                padding: 1.5rem;
+            }
+        }

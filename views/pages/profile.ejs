@@ -14,7 +14,8 @@
 
 <body>
     <!-- Left Sidebar -->
-    <%- include('../partials/slide_bar') %>
+   <%- include('../partials/slide_bar', { page: 'profile' }) %>
+
 
         <div class="profile-main-content">
             <form method="POST" action="/Update-user-info" enctype="multipart/form-data">
@@ -61,11 +62,11 @@
                         <label for="bio">Bio</label>
                         <textarea id="bio" name="bio" placeholder="Bio"
                             autocomplete="off"><%= user_info.bio%></textarea>
-                        <p class="note">0 / 150</p>
+                      
                     </div>
 
                     <button class="submit-btn">
-                        Submit
+                        Save
                     </button>
 
                 </div>

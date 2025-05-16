@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Music Player</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Persistent Left Sidebar -->
+  <%- include('partials/slide_bar',) %>
+
+  <!-- Main Content Area -->
+  <div id="main-content">
+    <%- body %>
+  </div>
+
+  <!-- Persistent Right Sidebar -->
+  <%- include('partials/Right_side') %>
+
+  <!-- Persistent Player -->
+  <audio id="audio-player" controls autoplay hidden>
+    <source src="/songs/song1.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Include App JS for music controls -->
+  <script src="/app.js"></script>
+
+  <!-- Include AJAX Navigation for page loading -->
+  <script>
+    // Dynamic Navigation (AJAX-style)
+    document.querySelectorAll('a[data-link]').forEach(link => {
+      link.addEventListener("click", async (e) => {
+        e.preventDefault();
+        const href = link.getAttribute("href");
+
+        const res = await fetch(href);
+        const text = await res.text();
+
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(text, "text/html");
+        const newContent = doc.querySelector("#main-content").innerHTML;
+
+        document.querySelector("#main-content").innerHTML = newContent;
+        history.pushState({}, "", href);
+
+        // Re-bind events after dynamic content load
+        bindCardEvents();
+      });
+    });
+
+    // Function to bind events to music cards for play functionality
+    function bindCardEvents() {
+      const cards = document.querySelectorAll("div.card.Music");
+      cards.forEach(card => {
+        card.addEventListener("click", () => {
+          updateSidebarUI(card);
+          rightSidebar.style.display = 'flex';
+        });
+      });
+    }
+
+    // Your existing play/pause and music update functions will remain unchanged.
+    // Example: 
+    // - updateSidebarUI
+    // - playNextSong
+    // - playPrevSong
+
+    bindCardEvents(); // Bind events when page loads
+  </script>
+</body>
+</html>

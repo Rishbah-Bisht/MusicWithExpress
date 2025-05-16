@@ -30,26 +30,26 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  function updateSidebarUI(card) {
-    const src = card.getAttribute("data-src");
-    const img = card.querySelector(".card-img").src;
-    const title = card.querySelector(".card-title").textContent;
-    const artist = card.querySelector(".card-desc").textContent;
+function updateSidebarUI(card) {
+  const src = card.getAttribute("data-src");
+  const img = card.querySelector(".card-img")?.src || '';
+  const title = card.querySelector(".card-title")?.textContent || 'Unknown Title';
+  const artist = card.querySelector(".card-desc")?.textContent || 'Unknown Artist';
 
-    audio.src = src;
-    audio.play();
-    isPlaying = true;
+  audio.src = src;
+  audio.play();
+  isPlaying = true;
 
-    nowPlayingImg.src = img;
-    songTitle.textContent = title;
-    rightSidebarTopic.textContent = title
-    artistName.textContent = artist;
-    playBtn.classList.remove("fa-play");
-    playBtn.classList.add("fa-pause");
+  nowPlayingImg.src = img;
+  songTitle.textContent = title;
+  rightSidebarTopic.textContent = title;
+  artistName.textContent = artist;
+  playBtn.classList.remove("fa-play");
+  playBtn.classList.add("fa-pause");
 
-    // Update current index
-    currentIndex = Array.from(cards).indexOf(card);
-  }
+  currentIndex = Array.from(cards).indexOf(card);
+}
+
 
 
 

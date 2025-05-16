@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App with Custom Theme</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/singer.css">
+</head>
+
+<body>
+    <!-- Left Sidebar -->
+    <%- include('../partials/slide_bar', { page: 'home' }) %>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <img src="<%=album.coverImage %>" alt=" Album Cover" class="album-cover">
+                <div class="album-info">
+                    <h1>
+                        <%=album.title %>
+                    </h1>
+                    <p class="album-meta">
+                        <strong>
+                            <%=album.Artist %>
+                        </strong>
+                    </p>
+
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <h2 class="trackList">Track List</h2>
+            <div class="track-list">
+                <% album.songs.forEach(function(songs, index) { %>
+
+
+
+
+                    <div class="card Music" data-src="<%=songs.filePath %>">
+                     
+                        <img class="card-img" src="<%=album.coverImage %>" alt="Album Art">
+                        <div class="card-title">
+                            <%=songs.name %>
+                        </div>
+                        <div class="card-desc">
+                            <%=songs.artist %>
+                        </div>
+                    </div>
+
+
+                    <% }) %>
+            </div>
+
+
+
+
+            <footer>
+                <h1>Description</h1>
+                <h2>
+                    <%=album.description %>
+                </h2>
+            </footer>
+        </div>
+
+
+
+        </div>
+
+        <div id="resizer"></div>
+
+        <!-- Right Sidebar -->
+        <%- include('../partials/Right_side') %>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+<script src="/bagcolor.js"></script>
+<script src="/app.js"></script>
+
+</html>

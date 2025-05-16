@@ -8,6 +8,7 @@ const MongoStore = require('connect-mongo');
 const methodOverride = require('method-override');
 const users = require('./routes/user');
 const auth = require('./routes/auth');
+const uploadsong = require('./routes/uploadsong');
 const flash = require('connect-flash');
 
 
@@ -23,7 +24,11 @@ app.use('/music', express.static(path.join(__dirname, 'music')));
 app.use('/picture', express.static(path.join(__dirname, 'picture')));
 app.use('/uploads', express.static('uploads')); 
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "/views"));
+app.set("views", [
+  path.join(__dirname, "views/auth"),
+  path.join(__dirname, "views/pages"),
+  path.join(__dirname, "views") // optional: main layout or partials
+]);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride("_method"));
@@ -60,6 +65,7 @@ app.use((req, res, next) => {
 
 app.use('/', users);
 app.use('/', auth);
+app.use('/', uploadsong);
 
 
 
