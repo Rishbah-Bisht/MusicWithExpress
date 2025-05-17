@@ -1,19 +1,19 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll("div.card.Music");
+  const cards = Array.from(document.querySelectorAll("div.card.Music"));
   const audio = new Audio();
+
+  const playAllBtn = document.querySelector(".play-all-btn");
+  const shuffleBtn = document.querySelector(".shuffle-btn");
   const nowPlayingImg = document.querySelector(".now-playing-img");
   const songTitle = document.querySelector(".song-title");
   const artistName = document.querySelector(".artist-name");
   const playBtn = document.querySelector(".play-btn i");
-  const nextBtn = document.querySelector(".fa-step-forward");
-  const previousBtn = document.querySelector(".fa-step-backward");
-  const closeBtn = document.querySelector('.close-btn');
   const rightSidebar = document.querySelector(".right-sidebar");
   const rightSidebarTopic = document.querySelector(".right-sidebar h1");
+  const closeBtn = document.querySelector(".close-btn");
 
-
-
-
+  const nextBtn = document.querySelector(".fa-step-forward");
+  const prevBtn = document.querySelector(".fa-step-backward");
 
   const progress = document.querySelector(".progress");
   const handle = document.querySelector(".progress-handle");
@@ -21,7 +21,9 @@ window.addEventListener("DOMContentLoaded", () => {
   const durationTimeEl = document.querySelectorAll(".time span")[1];
 
   let isPlaying = false;
-  let currentIndex = 0;  // Track current song index
+  let queue = [];
+  let currentIndex = 0;
+  let mode = "priority";
 
   function formatTime(time) {
     const minutes = Math.floor(time / 60);
@@ -29,105 +31,88 @@ window.addEventListener("DOMContentLoaded", () => {
     return `${minutes}:${seconds}`;
   }
 
+  function buildQueueSequentially() {
+    queue = [...cards];
+  }
 
-function updateSidebarUI(card) {
-  const src = card.getAttribute("data-src");
-  const img = card.querySelector(".card-img")?.src || '';
-  const title = card.querySelector(".card-title")?.textContent || 'Unknown Title';
-  const artist = card.querySelector(".card-desc")?.textContent || 'Unknown Artist';
+  function buildPriorityQueue() {
+    const liked = [];
+    const others = [];
 
-  audio.src = src;
-  audio.play();
-  isPlaying = true;
+    cards.forEach(card => {
+      const heartIcon = card.querySelector(".like-btn");
+      if (heartIcon && heartIcon.classList.contains("liked")) {
+        liked.push(card);
+      } else {
+        others.push(card);
+      }
+    });
 
-  nowPlayingImg.src = img;
-  songTitle.textContent = title;
-  rightSidebarTopic.textContent = title;
-  artistName.textContent = artist;
-  playBtn.classList.remove("fa-play");
-  playBtn.classList.add("fa-pause");
+    queue = [...liked, ...others];
+  }
 
-  currentIndex = Array.from(cards).indexOf(card);
-}
+  function buildQueueShuffled() {
+    queue = [...cards].sort(() => Math.random() - 0.5);
+  }
 
+  function rebuildQueue() {
+    if (mode === "priority") {
+      buildPriorityQueue();
+    } else if (mode === "shuffle") {
+      buildQueueShuffled();
+    } else {
+      buildQueueSequentially();
+    }
+  }
 
+  function playSongByIndex(index) {
+    if (index < 0 || index >= queue.length) return;
 
+    const card = queue[index];
+    const src = card.getAttribute("data-src");
+    const img = card.querySelector(".card-img")?.src || "";
+    const title = card.querySelector(".card-title")?.textContent || "Unknown Title";
+    const artist = card.querySelector(".card-desc")?.textContent || "Unknown Artist";
 
+    audio.src = src;
+    audio.play();
+    isPlaying = true;
 
+    nowPlayingImg.src = img;
+    songTitle.textContent = title;
+    artistName.textContent = artist;
+    rightSidebarTopic.textContent = title;
+    playBtn.classList.remove("fa-play");
+    playBtn.classList.add("fa-pause");
+    rightSidebar.style.display = "block";
 
-  closeBtn.addEventListener('click', () => {
-    rightSidebar.style.display = 'none';
-  })
-
-
-
-
-
-    setTimeout(() => {
-        const message = document.getElementById('successMessage');
-        if (message) {
-            message.style.opacity = '0';
-            setTimeout(() => message.style.display = 'none', 500);
-        }
-    }, 5000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    currentIndex = index;
+  }
 
   function playNextSong() {
-    currentIndex = (currentIndex + 1) % cards.length;  // Loop to the first song
-    updateSidebarUI(cards[currentIndex]);
+    if (queue.length === 0) return;
+    currentIndex = (currentIndex + 1) % queue.length;
+    playSongByIndex(currentIndex);
   }
 
-  function playPrevSong() {
-    currentIndex = (currentIndex - 1 + cards.length) % cards.length; // Loop to the last card
-    updateSidebarUI(cards[currentIndex]);
+  function playPreviousSong() {
+    if (queue.length === 0) return;
+    currentIndex = (currentIndex - 1 + queue.length) % queue.length;
+    playSongByIndex(currentIndex);
   }
 
-  // Play/Pause button
+  cards.forEach(card => {
+    card.addEventListener("click", () => {
+      mode = "sequential";
+      playAllBtn.style.backgroundColor = "";
+      shuffleBtn.style.backgroundColor = "";
+      rebuildQueue();
+      const trueIndex = queue.indexOf(card);
+          console.log(mode)
+      playSongByIndex(trueIndex);
+    });
+  });
+
   playBtn.addEventListener("click", () => {
     if (isPlaying) {
       audio.pause();
@@ -142,36 +127,62 @@ function updateSidebarUI(card) {
     }
   });
 
-  // Click on card to start playing
-  cards.forEach(card => {
-    card.addEventListener("click", () => {
-      updateSidebarUI(card);
-      rightSidebar.style.display = 'flex';
-    });
+  closeBtn.addEventListener("click", () => {
+    rightSidebar.style.display = "none";
+    audio.pause();
+    isPlaying = false;
+    playBtn.classList.remove("fa-pause");
+    playBtn.classList.add("fa-play");
   });
 
-  // Next button event
+  playAllBtn.addEventListener("click", () => {
+    if (mode === "sequential") {
+      mode = "priority";
+      playAllBtn.style.backgroundColor = "";
+      rebuildQueue();
+    } else {
+      mode = "priority";
+      playAllBtn.style.backgroundColor = "var(--accent-color)";
+      shuffleBtn.style.backgroundColor = "";
+      rebuildQueue();
+    }
+        console.log(mode)
+    playSongByIndex(0);
+  });
+
+  shuffleBtn.addEventListener("click", () => {
+    if (mode === "shuffle") {
+      mode = "shuffle";
+      shuffleBtn.style.backgroundColor = "";
+      rebuildQueue();
+    } else {
+      mode = "shuffle";
+      shuffleBtn.style.backgroundColor = "var(--accent-color)";
+      playAllBtn.style.backgroundColor = "";
+      rebuildQueue();
+    }
+    console.log(mode)
+    playSongByIndex(0);
+  });
+
   nextBtn.addEventListener("click", playNextSong);
 
-  previousBtn.addEventListener("click", playPrevSong);
+  prevBtn.addEventListener("click", playPreviousSong);
 
-  // Auto-play next song when current one ends
   audio.addEventListener("ended", playNextSong);
 
-  // Update progress and time
   audio.addEventListener("timeupdate", () => {
+    if (!audio.duration) return;
     const progressPercent = (audio.currentTime / audio.duration) * 100;
     progress.style.width = `${progressPercent}%`;
     handle.style.left = `${progressPercent}%`;
     currentTimeEl.textContent = formatTime(audio.currentTime);
   });
 
-  // Update duration when metadata is loaded
   audio.addEventListener("loadedmetadata", () => {
     durationTimeEl.textContent = formatTime(audio.duration);
   });
 
-  // Seek functionality
   document.querySelector(".progress-bar").addEventListener("click", (e) => {
     const bar = e.currentTarget;
     const clickX = e.offsetX;
@@ -179,4 +190,6 @@ function updateSidebarUI(card) {
     const newTime = (clickX / width) * audio.duration;
     audio.currentTime = newTime;
   });
+
+  rebuildQueue();
 });

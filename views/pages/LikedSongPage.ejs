@@ -12,58 +12,54 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/singer.css">
-    <link rel="icon" href="data:,">
+   <link rel="icon" href="data:,">
 
 
 </head>
 
 <body>
     <!-- Left Sidebar -->
-    <%- include('../partials/slide_bar', { page: 'home' }) %>
+    <%- include('../partials/slide_bar', { page: 'likedSongs' }) %>
 
         <!-- Main Content -->
         <div class="main-content">
             <div class="header">
-                <img src="<%=album.coverImage %>" alt=" Album Cover" class="album-cover">
+                <img src="/uploads/Profile/liked.png" alt=" Album Cover" class="album-cover">
                 <div class="album-info">
                     <h1>
-                        <%=album.title %>
+                     Liked Songs
                     </h1>
                     <p class="album-meta">
                         <strong>
-                            <%=album.Artist %>
+                          
                         </strong>
                     </p>
 
                 </div>
-
             </div>
-          <div class="playing-btns">
-  <button class="play-all-btn"><i class="fas fa-play"></i></button>
-  <button class="shuffle-btn"><i class="fa-solid fa-shuffle"></i></button>
-</div>
 
             <hr class="divider">
 
             <h2 class="trackList">Track List</h2>
             <div class="track-list">
-                <% album.songs.forEach(function(songs, index) { %>
+                <% likedSongs.forEach(function(songs, index) { %>
 
 
 
 
-                    <div class="card Music" data-src="<%= songs.filePath %>">
-                        <img class="card-img" src="<%= album.coverImage %>" alt="Album Art">
+                    <div class="card Music" data-src="<%= songs.songSrc %>">
+                        <img class="card-img" src="<%= songs.img %>" alt="Album Art">
 
                         <div class="card-title">
-                            <%= songs.name %>
+                            <%= songs.title %>
                         </div>
 
                         <div class="card-desc">
                             <%= songs.artist %>
                         </div>
 
-                        <i class="fa fa-heart like-btn" data-src="<%= songs.filePath %>"></i>
+                        <i class="fa fa-heart likepage like-btn " data-src="<%= songs.songSrc %>"
+                           ></i>
                     </div>
 
 
@@ -74,12 +70,7 @@
 
 
 
-            <footer>
-                <h1>Description</h1>
-                <h2>
-                    <%=album.description %>
-                </h2>
-            </footer>
+            
         </div>
 
 
@@ -88,13 +79,11 @@
 
         <div id="resizer"></div>
 
-        <!-- Right Sidebar -->
+ 
         <%- include('../partials/Right_side') %>
 </body>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
 <script src="/bagcolor.js"></script>
 <script src="/app.js"></script>
 <script src="/likedOneSong.js"></script>
-
 </html>

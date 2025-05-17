@@ -260,9 +260,6 @@ body {
 }
 
 
-.Music:hover {
-
-}
 
 .Music .card-img {
   width: 40px;
@@ -346,7 +343,7 @@ body {
 
 /* Right Sidebar */
 .right-sidebar {
-  width: 420px;
+  width: 380px;
   background-color: var(--card-color);
   padding: 20px;
   border-left: 1px solid var(--border-color);
@@ -405,9 +402,24 @@ body {
   background-color: var(--border-color);
   border-radius: 8px;
   margin-bottom: 50px;
-  box-shadow: var(--glow);
+}
+.playing-btns{
+  width: 100%;
+  margin-left: 20px;
+}
+.playing-btns button{
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-hover);
+  border-radius: 50%;
+  text-align: center;
 }
 
+.playing-btns button:hover{
+
+  background-color: var(--accent-hover);
+
+}
 .success-message {
   background-color: #349838;
   color: white;
@@ -703,6 +715,23 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 5px;
 }
+
+.like-btn.liked {
+  color: var(--accent-hover); 
+}
+
+.like-btn{
+  color: #a0a0a0;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.likepage{
+  color: var(--accent-hover); 
+}
+.like-btn:hover {
+  transform: scale(1.2); /* 1.2 means 120% of original size */
+}
+
 
 
 .album-cover {

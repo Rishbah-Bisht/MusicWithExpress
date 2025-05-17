@@ -8,6 +8,7 @@ const MongoStore = require('connect-mongo');
 const methodOverride = require('method-override');
 const users = require('./routes/user');
 const auth = require('./routes/auth');
+const likedSong = require('./routes/likedSong');
 const uploadsong = require('./routes/uploadsong');
 const flash = require('connect-flash');
 
@@ -66,6 +67,7 @@ app.use((req, res, next) => {
 app.use('/', users);
 app.use('/', auth);
 app.use('/', uploadsong);
+app.use('/', likedSong);
 
 
 
