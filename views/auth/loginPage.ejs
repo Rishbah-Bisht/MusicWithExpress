@@ -10,7 +10,7 @@
 
 <body>
     <div class="login-container">
-        <h2>Login Up</h2>
+        <h2>Musicfy Login </h2>
         <% if (error_msg) { %>
             <div class="alert alert-danger">
                 <%= error_msg %>
@@ -19,9 +19,9 @@
             <% } %>
                 <form action="/Musicfy/login/post" method="POST">
                     <div class="input-group">
-                        <label for="Registration_email">Enter Your ID</label>
-                        <input type="email" id="Registration_email" name="Registration_email"
-                            placeholder="Enter Your ID" required>
+                        <label for="Registration_email">Enter Your E-mail</label>
+                        <input type="text" id="Registration_email" name="Registration_email"
+                            placeholder="Enter Your E-mail" required>
                     </div>
 
                     <div class="input-group">
@@ -31,7 +31,7 @@
 
                     <button type="submit">Log-in</button>
                     <div class="signup-link">
-                        Don't have account? <a href="/sign-up">Sing Up</a>
+                        Don't have account? <a href="/Musicfy/sing-up">Sing Up</a>
                     </div>
                 </form>
     </div>

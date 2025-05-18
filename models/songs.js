@@ -1,57 +1,29 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-const songSchema = new mongoose.Schema({
+const SongSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: [true, 'Song title is required'],
+    required: true,
     trim: true
   },
-  album: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Album',
-    required: [true, 'Song must belong to an album']
+  artist: {
+    type: String,
+    required: true,
+    trim: true
   },
-  trackNumber: {
-    type: Number,
-    min: 1
+  mainArtist: {
+    type: String,
+    required: true,
+    required: true,
   },
-  duration: {
-    type: Number, // in seconds
+  coverImage: {
+    type: String, // URL or path to the cover image
     required: true
   },
-  file: {
-    path: {
-      type: String,
-      required: true
-    },
-    url: {
-      type: String,
-      required: true
-    },
-    size: {
-      type: Number, // in bytes
-      required: true
-    },
-    format: {
-      type: String,
-      enum: ['mp3', 'wav', 'ogg', 'm4a'],
-      required: true
-    }
+  audioFile: {
+    type: String, // URL or path to the audio file
+    required: true
   },
-  plays: {
-    type: Number,
-    default: 0
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now
-  }
 });
 
-// Indexes for faster queries
-songSchema.index({ album: 1, trackNumber: 1 });
-songSchema.index({ title: 'text' });
-
-const Song = mongoose.model('Song', songSchema);
-
-module.exports = Song;
+module.exports = mongoose.model("Song", SongSchema);

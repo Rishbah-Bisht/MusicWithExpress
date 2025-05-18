@@ -18,11 +18,27 @@
         <!-- Main Content -->
         <div class="main-content">
 
-            <div class="greeting">Good evening</div>
+
 
             <div class="recently-played">
-                <div class="section-title">Recently played</div>
+                <div class="section-title">Artist</div>
                 <div class="cards-container">
+                    <% if (users_data) { %>
+                        <% users_data.forEach(user=> { %>
+                            <a class="singer-Divs search_filter" id="song2" href="/Musicfy/Artist/<%= user.userName %>">
+                                <img src="<%= user.img %>" class="Artist-div" />
+                                <div class="SongName">
+                                    <%= user.userName %>
+                                </div>
+                                <div class="artistName">
+                                    <%= user.profession %>
+                                </div>
+                                <div class="play_btn_art">
+
+                                </div>
+                            </a>
+                            <% }); %>
+                                <% } %>
 
 
                 </div>
@@ -32,11 +48,33 @@
                 <div class="section-title">Made for You</div>
                 <div class="cards-container2">
 
+
+                    <% songs.forEach(function(song) { %>
+                        <% var isLiked=likedSong.some(function(liked) { return liked.title===song.title &&
+                            liked.artist===song.artist; }); %>
+                            <div class="card Music" data-src="/<%= song.audioFile %>">
+                                <img class="card-img" src="/<%= song.coverImage %>" alt="">
+
+                                <div class="card-title">
+                                    <%= song.title %>
+                                </div>
+
+                                <div class="card-desc">
+                                    <%= song.artist %>
+                                </div>
+
+                                <i class="fa fa-heart like-btn <%= isLiked ? 'liked' : '' %>"
+                                    data-src="/<%= song.audioFile %>"></i>
+                            </div>
+                            <% }); %>
+
+
+
                 </div>
             </div>
 
             <div class="made-for-you">
-                <div class="section-title">Made for You</div>
+                <div class="section-title">Albums</div>
                 <div class="cards-container">
                     <% if(albums){%>
                         <% albums.forEach(album=> { %>
@@ -45,9 +83,13 @@
                                     <img src="<%=album.coverImage %>" class="album-title"></img>
                                 </div>
                                 <div class="album-info">
-                                    <div class="artists-title"><%=album.title %></div>
-                                    <div class="artists-list"><%=album.Artist %></div>
-                                    
+                                    <div class="artists-title">
+                                        <%=album.title %>
+                                    </div>
+                                    <div class="artists-list">
+                                        <%=album.Artist %>
+                                    </div>
+
                                 </div>
                             </a>
                             <% }); %>
@@ -61,7 +103,9 @@
         <!-- Right Sidebar -->
         <%- include('../partials/Right_side') %>
 </body>
-<script src="rezier.js"></script>
-<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+<script src="/bagcolor.js"></script>
+<script src="/app.js"></script>
+<script src="/likedOneSong.js"></script>
 
 </html>

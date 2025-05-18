@@ -7,10 +7,6 @@ const likedSongs = new Set(JSON.parse(localStorage.getItem("likedSongs") || "[]"
 document.querySelectorAll(".like-btn").forEach(btn => {
   const songSrc = btn.getAttribute("data-src");
 
-  // Load hone ke time pe check karo ki already liked hai kya
-  if (likedSongs.has(songSrc)) {
-    btn.classList.add("liked");
-  }
 
   btn.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -34,14 +30,11 @@ document.querySelectorAll(".like-btn").forEach(btn => {
       .then(res => res.json())
       .then(data => {
         if (data.liked) {
-          likedSongs.add(songSrc);
           btn.classList.add("liked");
         } else {
-          likedSongs.delete(songSrc);
           btn.classList.remove("liked");
         }
 
-        localStorage.setItem("likedSongs", JSON.stringify([...likedSongs]));
       });
   });
 });

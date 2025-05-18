@@ -5,8 +5,8 @@ const router = express.Router();
 const user = require("../models/users");
 const crypto = require("crypto");
 const Album_data = require('../models/album')
-
-
+const Song_data = require('../models/songs');
+const UserLikedSong = require('../models/UserLikedSongs');
 
 
 // Helper to ensure user is logged in
@@ -70,13 +70,39 @@ router.get('/Musicfy/Home', ensureLoggedIn, async (req, res) => {
     try {
 
         const albums = await Album_data.find();
-        res.render("home",{albums});
+        const songs = await Song_data.find();
+        const users_data = await user.find();
+        const likedSong = await UserLikedSong.find({ userId: req.session.user.id });
+        res.render("home", { albums, songs, likedSong, users_data });
     } catch (err) {
         console.error(err);
         res.status(500).send('Error loading home data.');
     }
 });
 
+
+router.get('/Musicfy/Artist/:artistName', ensureLoggedIn, async (req, res) => {
+    try {
+        const artistName = req.params.artistName;
+        const user_info = await user.findOne({ userName: artistName });
+        console.log(user_info)
+
+        const likedSong = await UserLikedSong.find({ userId: req.session.user.id });
+        const Songs = await Song_data.find({ mainArtist: artistName });
+        const albums = await Album_data.find({ mainArtist: artistName });
+
+        if (!Songs) {
+            return res.status(404).send('Songs not found.');
+        }
+        if (!albums) {
+            return res.status(404).send('Album not found.');
+        }
+        res.render('ArtistPage', { Songs, albums, user_info, likedSong })
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Error loading album data.');
+    }
+});
 
 
 
@@ -96,6 +122,13 @@ router.get('/Musicfy/create-playlist', (req, res) => {
 router.get('/Musicfy/create-playlist/Add-Album', (req, res) => {
     res.render('uploadAlbum')
 })
+
+router.get('/Musicfy/create-playlist/Add-Single-Song', async (req, res) => {
+    const user_info = await user.findById(req.session.user.id);
+    res.render('uploadAingleSong', { user_name: user_info.userName })
+})
+
+
 
 // Update user info (name, bio, profile image)
 router.post('/Update-user-info', ensureLoggedIn, upload.single('p_img'), async (req, res) => {
@@ -137,12 +170,12 @@ router.get('/Musicfy/Album/:albumname', ensureLoggedIn, async (req, res) => {
         const albumName = req.params.albumname;
 
         const album = await Album_data.findOne({ title: albumName });
-
+        const likedSong = await UserLikedSong.find({ userId: req.session.user.id });
         if (!album) {
             return res.status(404).send('Album not found.');
         }
 
-        res.render("album", { album });
+        res.render("album", { album, likedSong });
     } catch (err) {
         console.error(err);
         res.status(500).send('Error loading album data.');

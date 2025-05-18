@@ -24,14 +24,14 @@
         <!-- Main Content -->
         <div class="main-content">
             <div class="header">
-                <img src="<%=album.coverImage %>" alt=" Album Cover" class="album-cover">
+                <img src="<%=user_info.img %>" alt=" Album Cover" class="album-cover">
                 <div class="album-info">
                     <h1>
-                        <%=album.title %>
+                        <%=user_info.userName %>
                     </h1>
                     <p class="album-meta">
                         <strong>
-                            <%=album.Artist %>
+                            <%=user_info.profession %>
                         </strong>
                     </p>
 
@@ -47,15 +47,13 @@
 
             <h2 class="trackList">Track List</h2>
             <div class="track-list">
-
-                <% album.songs.forEach(function(song) { %>
-                    <% var isLiked=likedSong.some(function(liked) { return liked.title===song.name &&
-                        liked.artist===song.artist; }); %>
-                        <div class="card Music" data-src="<%= song.filePath %>">
-                            <img class="card-img" src="<%= album.coverImage %>" alt="Album Art">
+                 <% Songs.forEach(function(song) { const isLiked=likedSong.some(function(liked) { return
+                        liked.title===song.title && liked.artist===song.artist; }); %>
+                        <div class="card Music" data-src="/<%= song.audioFile %>">
+                            <img class="card-img" src="/<%= song.coverImage %>" alt="">
 
                             <div class="card-title">
-                                <%= song.name %>
+                                <%= song.title %>
                             </div>
 
                             <div class="card-desc">
@@ -63,20 +61,40 @@
                             </div>
 
                             <i class="fa fa-heart like-btn <%= isLiked ? 'liked' : '' %>"
-                                data-src="<%= song.filePath %>"></i>
+                                data-src="/<%= song.audioFile %>"></i>
                         </div>
-                        <% }); %>
+                        <% }) %>
+            </div>
 
+            <div class="made-for-you">
+                <div class="section-title">Albums</div>
+                <div class="cards-container">
+                    <% if(albums){%>
+                        <% albums.forEach(album=> { %>
+                            <a href='/Musicfy/Album/<%=album.title %>' class="album-card">
+                                <div class="album-cover">
+                                    <img src="<%=album.coverImage %>" class="album-title"></img>
+                                </div>
+                                <div class="album-info">
+                                    <div class="artists-title">
+                                        <%=album.title %>
+                                    </div>
+                                    <div class="artists-list">
+                                        <%=album.Artist %>
+                                    </div>
 
+                                </div>
+                            </a>
+                            <% }); %>
+                                <% }%>
+                </div>
             </div>
 
 
-
-
             <footer>
-                <h1>Description</h1>
+                <h1>Bio</h1>
                 <h2>
-                    <%=album.description %>
+                    <%=user_info.bio %>
                 </h2>
             </footer>
         </div>

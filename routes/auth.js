@@ -42,9 +42,9 @@ router.post('/Musicfy/sing-up/post', async (req, res) => {
 
     try {
         const userInfo = await user.findOne({ email: user_email });
-        if (userInfo) {
-            return res.send("User already exists.");
-        }
+        // if (userInfo) {
+        //     return res.send("User already exists.");
+        // }
 
         const newUser = new user({
             name: user_name,
@@ -145,10 +145,8 @@ router.get('/Musicfy/login', (req, res) => {
 
 router.post('/Musicfy/login/post', async (req, res) => {
     const { Registration_email, password } = req.body;
-
-    console.log(Registration_email)
     try {
-        const user_data = await user.findOne({ email: Registration_email });
+        const user_data = await user.findOne({ userName: Registration_email });
         if (!user_data) {
             req.flash('error_msg', 'No account found. Please sign up first.');
             return res.redirect('/Musicfy/login');
@@ -164,6 +162,7 @@ router.post('/Musicfy/login/post', async (req, res) => {
         req.session.user = {
             id: user_data._id,
             email: user_data.email,
+            userUniquename: user_data.userName
         };
 
         res.redirect('/Musicfy/Home');

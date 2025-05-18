@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const upload = require('../middleware/uploadsSongs');
 const Album = require('../models/album');  
+const Song = require('../models/songs');  
 
 router.post('/upload-album', upload.fields([
   { name: 'coverImage', maxCount: 1 },
@@ -38,6 +39,37 @@ router.post('/upload-album', upload.fields([
 
 
 
+router.post(
+  "/upload-song",
+  upload.fields([
+    { name: "coverImage", maxCount: 1 },
+    { name: "audioFile", maxCount: 1 }
+  ]),
+  async (req, res) => {
+    try {
+      const { title, artist,mainArtist } = req.body;
+      const coverImage = req.files["coverImage"]?.[0]?.path;
+      const audioFile = req.files["audioFile"]?.[0]?.path;
 
-router.post('/upload-song')
+      if (!title || !artist || !coverImage || !audioFile) {
+        return res.status(400).send("Missing required fields");
+      }
+
+      const newSong = new Song({
+        title,
+        artist,
+        mainArtist,
+        coverImage,
+        audioFile
+      });
+
+      await newSong.save();
+      res.send("Song uploaded successfully");
+    } catch (err) {
+      console.error(err);
+      res.status(500).send("Server error");
+    }
+  }
+);
+
 module.exports = router;

@@ -10,6 +10,9 @@ const songSchema = new mongoose.Schema({
 const albumSchema = new mongoose.Schema({
   title: String,
   Artist: String,
+  mainArtist: {
+    type: String
+  },
   description: String,
   coverImage: String,
   songs: [songSchema]

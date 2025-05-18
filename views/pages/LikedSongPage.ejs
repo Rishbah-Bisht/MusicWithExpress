@@ -12,7 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/singer.css">
-   <link rel="icon" href="data:,">
+    <link rel="icon" href="data:,">
 
 
 </head>
@@ -27,11 +27,11 @@
                 <img src="/uploads/Profile/liked.png" alt=" Album Cover" class="album-cover">
                 <div class="album-info">
                     <h1>
-                     Liked Songs
+                        Liked Songs
                     </h1>
                     <p class="album-meta">
                         <strong>
-                          
+
                         </strong>
                     </p>
 
@@ -43,11 +43,8 @@
             <h2 class="trackList">Track List</h2>
             <div class="track-list">
                 <% likedSongs.forEach(function(songs, index) { %>
+                    <div class="card Music" data-src="<%= songs.songSrc.replace(/\\/g, '/') %>">
 
-
-
-
-                    <div class="card Music" data-src="<%= songs.songSrc %>">
                         <img class="card-img" src="<%= songs.img %>" alt="Album Art">
 
                         <div class="card-title">
@@ -57,9 +54,7 @@
                         <div class="card-desc">
                             <%= songs.artist %>
                         </div>
-
-                        <i class="fa fa-heart likepage like-btn " data-src="<%= songs.songSrc %>"
-                           ></i>
+                        <i class="fa fa-heart liked like-btn " data-src="<%= songs.songSrc %>"></i>
                     </div>
 
 
@@ -70,7 +65,7 @@
 
 
 
-            
+
         </div>
 
 
@@ -79,11 +74,12 @@
 
         <div id="resizer"></div>
 
- 
+
         <%- include('../partials/Right_side') %>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
 <script src="/bagcolor.js"></script>
 <script src="/app.js"></script>
 <script src="/likedOneSong.js"></script>
+
 </html>

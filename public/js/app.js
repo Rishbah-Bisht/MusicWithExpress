@@ -104,14 +104,33 @@ window.addEventListener("DOMContentLoaded", () => {
   cards.forEach(card => {
     card.addEventListener("click", () => {
       mode = "sequential";
-      playAllBtn.style.backgroundColor = "";
-      shuffleBtn.style.backgroundColor = "";
-      rebuildQueue();
+
+      if (shuffleBtn) {
+        playAllBtn.style.backgroundColor = "";
+        shuffleBtn.style.backgroundColor = "";
+        rebuildQueue();
+      }
+
+      // Build song info from the clicked card
+      const songInfo = {
+        title: card.querySelector(".card-title")?.innerText || "",
+        artist: card.querySelector(".card-desc")?.innerText || "",
+        audioSrc: card.getAttribute("data-src") || "",
+        coverImage: card.querySelector(".card-img")?.getAttribute("src") || "",
+        playedAt: Date.now()
+      };
+      let songHistory = JSON.parse(localStorage.getItem("songHistory")) || [];
+      songHistory = songHistory.filter(s => s.audioSrc !== songInfo.audioSrc);
+      songHistory.unshift(songInfo);
+      if (songHistory.length > 9) {
+        songHistory = songHistory.slice(0, 9);
+      }
+      localStorage.setItem("songHistory", JSON.stringify(songHistory));
       const trueIndex = queue.indexOf(card);
-          console.log(mode)
       playSongByIndex(trueIndex);
     });
   });
+
 
   playBtn.addEventListener("click", () => {
     if (isPlaying) {
@@ -135,36 +154,41 @@ window.addEventListener("DOMContentLoaded", () => {
     playBtn.classList.add("fa-play");
   });
 
-  playAllBtn.addEventListener("click", () => {
-    if (mode === "sequential") {
-      mode = "priority";
-      playAllBtn.style.backgroundColor = "";
-      rebuildQueue();
-    } else {
-      mode = "priority";
-      playAllBtn.style.backgroundColor = "var(--accent-color)";
-      shuffleBtn.style.backgroundColor = "";
-      rebuildQueue();
-    }
-        console.log(mode)
-    playSongByIndex(0);
-  });
 
-  shuffleBtn.addEventListener("click", () => {
-    if (mode === "shuffle") {
-      mode = "shuffle";
-      shuffleBtn.style.backgroundColor = "";
-      rebuildQueue();
-    } else {
-      mode = "shuffle";
-      shuffleBtn.style.backgroundColor = "var(--accent-color)";
-      playAllBtn.style.backgroundColor = "";
-      rebuildQueue();
-    }
-    console.log(mode)
-    playSongByIndex(0);
-  });
+  if (playAllBtn) {
+    playAllBtn.addEventListener("click", () => {
+      if (mode === "sequential") {
+        mode = "priority";
+        playAllBtn.style.backgroundColor = "";
+        rebuildQueue();
+      } else {
+        mode = "priority";
+        playAllBtn.style.backgroundColor = "var(--accent-color)";
+        shuffleBtn.style.backgroundColor = "";
+        rebuildQueue();
+      }
+      console.log(mode)
+      playSongByIndex(0);
+    });
+  }
 
+
+  if (shuffleBtn) {
+    shuffleBtn.addEventListener("click", () => {
+      if (mode === "shuffle") {
+        mode = "shuffle";
+        shuffleBtn.style.backgroundColor = "";
+        rebuildQueue();
+      } else {
+        mode = "shuffle";
+        shuffleBtn.style.backgroundColor = "var(--accent-color)";
+        playAllBtn.style.backgroundColor = "";
+        rebuildQueue();
+      }
+      console.log(mode)
+      playSongByIndex(0);
+    });
+  }
   nextBtn.addEventListener("click", playNextSong);
 
   prevBtn.addEventListener("click", playPreviousSong);
